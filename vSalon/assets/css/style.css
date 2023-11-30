@@ -1,0 +1,56 @@
+@charset "UTF-8";
+.nav-item {
+  margin-right: 2em;
+}
+
+.nav-item > .nav-link {
+  color: #333;
+}
+
+.flag-and-arrow-container {
+  display: flex;
+  align-items: center;
+}
+
+.flag {
+  width: 50px; /* Điều chỉnh kích thước của lá cờ */
+  margin-right: -2em;
+}
+
+.arrow-icon {
+  width: 10px; /* Điều chỉnh kích thước của mũi tên đi xuống */
+  height: 10px;
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.btn {
+  margin: 15px;
+  width: 115px;
+  height: 38px;
+}
+
+.btn-register {
+  border-radius: 33px; /* Điều chỉnh độ bo tròn nếu cần thiết */
+  color: #fff !important; /* Màu chữ mặc định */
+  background: linear-gradient(90deg, #3bb54a, #7ec341);
+  background-size: 200% 100%; /* Kích thước gradient */
+  background-position: 100% 0; /* Bắt đầu từ phía trái (100%) */
+  transition: background-position 0.3s ease; /* Hiệu ứng chuyển dần cho background-position */
+}
+
+.btn-login {
+  border-radius: 33px;
+  background-size: 200% 100%;
+  color: #3bb54a !important;
+  background-position: 100% 0;
+  box-shadow: inset 0 0 0 1.5px #3bb54a !important;
+}
+
+#swiperImage > h3 > span {
+  margin-left: 4px;
+  color: #3bb54a !important;
+}
+
+/*# sourceMappingURL=style.css.map */
