@@ -31,10 +31,10 @@
   margin: 15px;
   width: 115px;
   height: 38px;
+  border-radius: 33px;
 }
 
 .btn-register {
-  border-radius: 33px; /* Điều chỉnh độ bo tròn nếu cần thiết */
   color: #fff !important; /* Màu chữ mặc định */
   background: linear-gradient(90deg, #3bb54a, #7ec341);
   background-size: 200% 100%; /* Kích thước gradient */
@@ -43,7 +43,6 @@
 }
 
 .btn-login {
-  border-radius: 33px;
   background-size: 200% 100%;
   color: #3bb54a !important;
   background-position: 100% 0;
