@@ -1,3 +1,18 @@
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
 //CSS cho navbar
 .nav-item {
   margin-right: 2em;
@@ -50,11 +65,76 @@
 }
 
 //CSS Swipped image
-#swiperImage {
+#swiperImages {
   margin-top: 5em;
+  background-color: #ccc;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom: 2px solid #ccc; /* Màu xám */
+  overflow: hidden;
 }
 
-#swiperImage > h3 > span {
+#swiperImages > h3 > span {
   margin-left: 4px;
   color: #3bb54a !important;
+}
+
+.mySwiper {
+  display: flex;
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  display: flex;
+}
+
+.swiper-slide {
+  flex-shrink: 0;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.custom-carousel-item {
+  border: 1px solid #000;
+  box-sizing: border-box;
+  transform: scale(0.5, 0.75);
+}
+
+.custom-carousel-item > img {
+  width: 100%;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: #3bb54a; /* Màu nền của khối tròn */
+  padding: 3em;
+  border-radius: 50% !important; /* Để tạo hình dạng tròn */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px; /* Kích thước chữ */
+  cursor: pointer; /* Đổi con trỏ khi hover */
+}
+
+.swiper-button-prev {
+  margin-right: 10px; /* Khoảng cách giữa nút prev và nút next */
 }
