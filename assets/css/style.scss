@@ -67,7 +67,7 @@ body {
 //CSS Swipped image
 #swiperImages {
   margin-top: 5em;
-  background-color: #ccc;
+  // background-color: #ccc;
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
   border-bottom: 2px solid #ccc; /* Màu xám */
@@ -138,3 +138,48 @@ body {
 .swiper-button-prev {
   margin-right: 10px; /* Khoảng cách giữa nút prev và nút next */
 }
+
+.navTabDetail .row {
+  margin: 3em;
+}
+
+.navTabDetail .row {
+  margin: 1em;
+}
+
+.navTabDetailImg {
+  border-radius: 5%;
+  border: 2px solid #3bb54a;
+  box-shadow: 2em 3em 3em #e7f6e9;
+}
+
+.navTabDetail .row .navTabDetailDescription {
+  margin-top: 5em;
+}
+
+.priceDetail {
+  margin-top: 2em;
+}
+
+.priceDetail > h3 > span {
+  margin-left: 4px;
+  color: #3bb54a !important;
+}
+
+.basicCheck {
+  width: var(--circle-size);
+  height: var(--circle-size);
+  border-radius: 50%;
+  background-color: #ccc;
+  top: 60%;
+}
+
+.card-body .d-flex {
+  margin-bottom: 1.5em;
+}
+
+.card-body .d-flex p {
+  margin-bottom: 2px;
+  margin-left: 4px;
+}
+
