@@ -147,7 +147,8 @@ body {
 }
 
 .priceDetail {
-  margin-top: 2em;
+  padding: 2em;
+  background-color: #fafafa;
 }
 
 .priceDetail > h3 > span {
@@ -169,17 +170,13 @@ body {
 }
 
 .customerIntro {
-  position: absolute;
-  top: 15%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .customerComment {
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin-bottom: 3em;
 }
 
 .customerComment .basicCheck {
