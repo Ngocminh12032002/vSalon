@@ -42,12 +42,12 @@ body {
 }
 
 //CSS cho button
-.btn {
-  margin: 15px;
-  width: 115px;
-  height: 38px;
-  border-radius: 33px;
-}
+// .btn {
+//   margin: 15px;
+//   width: 115px;
+//   height: 38px;
+//   border-radius: 33px;
+// }
 
 .btn-register {
   color: #fff !important; /* Màu chữ mặc định */
@@ -174,12 +174,30 @@ body {
   top: 60%;
 }
 
-.card-body .d-flex {
-  margin-bottom: 1.5em;
-}
+// .card-body .d-flex {
+//   margin-bottom: 1.5em;
+// }
 
 .card-body .d-flex p {
   margin-bottom: 2px;
   margin-left: 4px;
 }
 
+.customerIntro {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.customerComment {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.customerComment .basicCheck {
+  margin-right: 2rem;
+  width: 18rem !important;
+}
