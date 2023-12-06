@@ -29,7 +29,19 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
     crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./assets/css/repository.css">
+  <link rel="stylesheet" href="./assets/css/repository.scss">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
+<style>
+  .figure-caption.clicked img {
+    filter: hue-rotate(120deg);
+  }
+</style>
 
 <body>
   <div class="container">
@@ -38,11 +50,8 @@
         <div class="navbar-brand col-md-2">
           <img src="./assets/img/logo.svg" alt="Home icon" />
         </div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
-          <ul class="navbar-nav mb-2 mb-lg-0">
+          <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link active" href="#">Trang chủ</a>
             </li>
@@ -67,10 +76,14 @@
           <button type="button" class="btn btn-register">Đăng ký</button>
           <button type="button" class="btn btn-login">Đăng nhập</button>
         </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon" style="color: #2F4858;">
+            <i class="fa-solid fa-sliders"></i>
+          </span>
+        </button>
       </div>
     </nav>
   </div>
-
   <!-- Slide show  -->
   <div id="demo" class="carousel slide" data-bs-ride="carousel">
     <!-- The slideshow/carousel -->
@@ -130,7 +143,7 @@
   <div class="container" style="margin-top: 5em;">
     <nav>
       <div class="nav justify-content-center" id="nav-tab" role="tablist">
-        <figure class="figure align-items-center justify-content-center" data-bs-toggle="collapse"
+        <figure class="figure align-items-center justify-content-center figure-caption" data-bs-toggle="collapse"
           data-bs-target="#navbarDetailSalon"
           style="margin-right: 3%;  flex-direction: column; align-items: center; justify-content: center; text-align: center; width: 10%;">
           <img src="./assets/img/qlysalon.svg" alt="" class="text-center">
@@ -139,42 +152,49 @@
           <figcaption class="figure-caption" data-bs-toggle="collapse" data-bs-target="#navbarDetailSalon">Quản lý
             chuỗi salon</figcaption>
         </figure>
-        <figure class="figure align-items-center justify-content-center"
+        <figure class="figure align-items-center justify-content-center figure-caption" data-bs-toggle="collapse"
+          data-bs-target="#navbarDetailSchedule"
           style="margin-right: 3%;  flex-direction: column; align-items: center; justify-content: center; text-align: center; width: 10%;">
           <img src="./assets/img/qlylichhen.svg" alt="" class="text-center">
           <span
             style="position: absolute; height: 5%; border-right: 2px solid #E0E0E0;margin-left: 2.8%; margin-top: 2%;"></span></i>
-          <figcaption class="figure-caption">Quản lý lịch hẹn</figcaption>
+          <figcaption class="figure-caption" data-bs-toggle="collapse" data-bs-target="#navbarDetailSchedule">Quản lý
+            lịch hẹn</figcaption>
         </figure>
-        <figure class="figure align-items-center justify-content-center"
+        <figure class="figure align-items-center justify-content-center figure-caption" data-bs-toggle="collapse"
+          data-bs-target="#navbarDetailHumanResource"
           style="margin-right: 3%;  flex-direction: column; align-items: center; justify-content: center; text-align: center; width: 10%;">
           <img src="./assets/img/qlythanhvien.svg" alt="" class="text-center">
           <span
             style="position: absolute; height: 5%; border-right: 2px solid #E0E0E0;margin-left: 2.8%; margin-top: 2%;"></span></i>
           <figcaption class="figure-caption">Quản lý thành viên</figcaption>
         </figure>
-        <figure class="figure align-items-center justify-content-center"
+        <figure class="figure align-items-center justify-content-center figure-caption" data-bs-toggle="collapse"
+          data-bs-target="#navbarDetailBuy"
           style="margin-right: 3%;  flex-direction: column; align-items: center; justify-content: center; text-align: center; width: 10%;">
           <img src="./assets/img/banhang.svg" alt="" class="text-center">
           <span
             style="position: absolute; height: 5%; border-right: 2px solid #E0E0E0;margin-left: 2.8%; margin-top: 2%;"></span></i>
           <figcaption class="figure-caption">Bán hàng</figcaption>
         </figure>
-        <figure class="figure align-items-center justify-content-center"
+        <figure class="figure align-items-center justify-content-center figure-caption" data-bs-toggle="collapse"
+          data-bs-target="#navbarDetailStorage"
           style="margin-right: 3%;  flex-direction: column; align-items: center; justify-content: center; text-align: center; width: 10%;">
           <img src="./assets/img/qlykho.svg" alt="" class="text-center">
           <span
             style="position: absolute; height: 5%; border-right: 2px solid #E0E0E0;margin-left: 2.8%; margin-top: 2%;"></span></i>
           <figcaption class="figure-caption">Quản lý kho</figcaption>
         </figure>
-        <figure class="figure align-items-center justify-content-center"
+        <figure class="figure align-items-center justify-content-center figure-caption" data-bs-toggle="collapse"
+          data-bs-target="#navbarDetailPerson"
           style="margin-right: 3%;  flex-direction: column; align-items: center; justify-content: center; text-align: center; width: 10%;">
           <img src="./assets/img/qlynvien.svg" alt="" class="text-center">
           <span
             style="position: absolute; height: 5%; border-right: 2px solid #E0E0E0;margin-left: 2.8%; margin-top: 2%;"></span></i>
           <figcaption class="figure-caption">Quản lý nhân viên</figcaption>
         </figure>
-        <figure class="figure align-items-center justify-content-center"
+        <figure class="figure align-items-center justify-content-center figure-caption" data-bs-toggle="collapse"
+          data-bs-target="#navbarDetailReport"
           style="margin-right: 3%;  flex-direction: column; align-items: center; justify-content: center; text-align: center; width: 10%;">
           <img src="./assets/img/baocaothongke.svg" alt="" class="text-center">
           <figcaption class="figure-caption">Báo cáo thống kê</figcaption>
@@ -183,133 +203,92 @@
     </nav>
     <div class="collapse" id="navbarDetailSalon">
       <div class="container d-flex justify-content-center navTabDetail">
-        <div class="row">
-          <div class="col-sm-8">
-            <img src="./assets/img/tonghopdulieu.svg" alt="" class="navTabDetailImg">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-smfa-rotate-90 navTabDetailDescription">
-            <h6>Tổng hợp dữ liệu nhanh chóng</h6>
-            <p>Báo cáo thông tin lịch hẹn, doanh thu... chi tiết đến từng salon trong chuỗi. Báo cáo tổng hợp cho số
-              liệu
-              tổng
-              quan tình hình kinh doanh của toàn bộ salon. Dễ dàng so sánh, đánh giá hiệu quả hoạt động của từng cửa
-              hàng.
-            </p>
-          </div>
+        <img src="./assets/img/tonghopdulieu.svg" alt="" class="navTabDetailImg">
+        <div class="navTabDetailDescription">
+          <h6>Tổng hợp dữ liệu nhanh chóng</h6>
+          <p>Báo cáo thông tin lịch hẹn, doanh thu... chi tiết đến từng salon trong chuỗi. Báo cáo tổng hợp cho số
+            liệu
+            tổng
+            quan tình hình kinh doanh của toàn bộ salon. Dễ dàng so sánh, đánh giá hiệu quả hoạt động của từng cửa
+            hàng.
+          </p>
         </div>
       </div>
     </div>
 
     <div class="collapse" id="navbarDetailSchedule">
       <div class="container d-flex justify-content-center navTabDetail">
-        <div class="row">
-          <div class="col-sm-8">
-            <img src="./assets/img/tonghopdulieu.svg" alt="" class="navTabDetailImg">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-smfa-rotate-90 navTabDetailDescription">
-            <h6>Quản lý lịch hẹn</h6>
-            <p>Quản lý lịch hẹn giúp cho salon sắp xếp công việc một cách hiệu quả. Tăng năng suất làm việc của nhân
-              viên, tăng trải nghiệm của khách hàng.
-            </p>
-          </div>
+        <img src="./assets/img/manageschedule.svg" alt="" class="navTabDetailImg">
+        <div class="navTabDetailDescription">
+          <h6>Quản lý lịch hẹn</h6>
+          <p>Quản lý lịch hẹn giúp cho salon sắp xếp công việc một cách hiệu quả. Tăng năng suất làm việc của nhân
+            viên, tăng trải nghiệm của khách hàng.
+          </p>
         </div>
       </div>
     </div>
 
     <div class="collapse" id="navbarDetailHumanResource">
       <div class="container d-flex justify-content-center navTabDetail">
-        <div class="row">
-          <div class="col-sm-8">
-            <img src="./assets/img/tonghopdulieu.svg" alt="" class="navTabDetailImg">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-smfa-rotate-90 navTabDetailDescription">
-            <h6>Duy trì dữ chân khách hàng</h6>
-            <p>Với thẻ thành viên, salon sẽ nhận diện được khách hàng thân thiết, từ đó phục vụ khách hàng tốt hơn để
-              giữ chân khách hàng
-            </p>
-          </div>
+        <img src="./assets/img/keepCustomer.svg" alt="" class="navTabDetailImg">
+        <div class="navTabDetailDescription">
+          <h6>Duy trì dữ chân khách hàng</h6>
+          <p>Với thẻ thành viên, salon sẽ nhận diện được khách hàng thân thiết, từ đó phục vụ khách hàng tốt hơn để
+            giữ chân khách hàng
+          </p>
         </div>
       </div>
     </div>
 
     <div class="collapse" id="navbarDetailBuy">
       <div class="container d-flex justify-content-center navTabDetail">
-        <div class="row">
-          <div class="col-sm-8">
-            <img src="./assets/img/tonghopdulieu.svg" alt="" class="navTabDetailImg">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-smfa-rotate-90 navTabDetailDescription">
-            <h6>Tạo khuyến mại thành công</h6>
-            <p>Chỉ mất vài phút, bạn đã có thể tạo và áp dụng khuyến mãi cho từng mặt hàng hay nhóm hàng, giá trị khuyến
-              mãi linh hoạt theo đơn vị tính (chiếc, bộ, ...) số tiền cụ thể (vnd) hoặc % (giá trị đơn hàng, giá trị
-              hàng tặng, điểm tích luỹ...). Tất cả các thông tin về khuyến mãi và giá trị khuyến mãi đều được thể hiện
-              rõ ràng hoá đơn.
-            </p>
-          </div>
+        <img src="./assets/img/sellProduct.svg" alt="" class="navTabDetailImg">
+        <div class="navTabDetailDescription">
+          <h6>Tạo khuyến mại thành công</h6>
+          <p>Chỉ mất vài phút, bạn đã có thể tạo và áp dụng khuyến mãi cho từng mặt hàng hay nhóm hàng, giá trị khuyến
+            mãi linh hoạt theo đơn vị tính (chiếc, bộ, ...) số tiền cụ thể (vnd) hoặc % (giá trị đơn hàng, giá trị
+            hàng tặng, điểm tích luỹ...). Tất cả các thông tin về khuyến mãi và giá trị khuyến mãi đều được thể hiện
+            rõ ràng hoá đơn.
+          </p>
         </div>
       </div>
     </div>
 
     <div class="collapse" id="navbarDetailStorage">
       <div class="container d-flex justify-content-center navTabDetail">
-        <div class="row">
-          <div class="col-sm-8">
-            <img src="./assets/img/tonghopdulieu.svg" alt="" class="navTabDetailImg">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-smfa-rotate-90 navTabDetailDescription">
-            <h6>Nắm bắt hàng tồn kho, bổ sung hàng hoá kịp thời</h6>
-            <p>vSalon giúp bạn quản lý kho chính xác tới từng mặt hàng cụ thể và chi tiết trong từng chi nhánh, gạt đi
-              nỗi lo muôn thuở về những sản phẩm chồng chất mà không soát nổi một con số như tình trạng của các cửa hàng
-              gặp phải. Theo đó, bạn sẽ nắm được mặt hàng nào đang bán chạy, số lượng tồn kho để đi nhập hàng kế tiếp.
-            </p>
-          </div>
+        <img src="./assets/img/storage.svg" alt="" class="navTabDetailImg">
+        <div class="navTabDetailDescription">
+          <h6>Nắm bắt hàng tồn kho, bổ sung hàng hoá kịp thời</h6>
+          <p>vSalon giúp bạn quản lý kho chính xác tới từng mặt hàng cụ thể và chi tiết trong từng chi nhánh, gạt đi
+            nỗi lo muôn thuở về những sản phẩm chồng chất mà không soát nổi một con số như tình trạng của các cửa hàng
+            gặp phải. Theo đó, bạn sẽ nắm được mặt hàng nào đang bán chạy, số lượng tồn kho để đi nhập hàng kế tiếp.
+          </p>
         </div>
       </div>
     </div>
 
     <div class="collapse" id="navbarDetailPerson">
       <div class="container d-flex justify-content-center navTabDetail">
-        <div class="row">
-          <div class="col-sm-8">
-            <img src="./assets/img/tonghopdulieu.svg" alt="" class="navTabDetailImg">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-smfa-rotate-90 navTabDetailDescription">
-            <h6>Lập lịch làm việc khoa học</h6>
-            <p>Quản lý ca làm việc
-              Ngày nghỉ, nghỉ lễ
-              Thời gian mở cửa
-              Thời gian đóng cửa
-            </p>
-          </div>
+        <img src="./assets/img/reportTK.svg" alt="" class="navTabDetailImg">
+        <div class="navTabDetailDescription">
+          <h6>Lập lịch làm việc khoa học</h6>
+          <p>Quản lý ca làm việc
+            Ngày nghỉ, nghỉ lễ
+            Thời gian mở cửa
+            Thời gian đóng cửa
+          </p>
         </div>
       </div>
     </div>
 
     <div class="collapse" id="navbarDetailReport">
       <div class="container d-flex justify-content-center navTabDetail">
-        <div class="row">
-          <div class="col-sm-8">
-            <img src="./assets/img/tonghopdulieu.svg" alt="" class="navTabDetailImg">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-smfa-rotate-90 navTabDetailDescription">
-            <h6>Chúng tôi cung cấP những con số bạn cần</h6>
-            <p>Bạn có muốn nắm được doanh thu bán hàng cụ thể đến từng ngày, lịch sử mua hàng, doanh số bán hàng của từng nhân viên hay công nợ từng chi nhánh 
-            </p>
-          </div>
+        <img src="./assets/img/tonghopdulieu.svg" alt="" class="navTabDetailImg">
+        <div class="navTabDetailDescription">
+          <h6>Chúng tôi cung cấP những con số bạn cần</h6>
+          <p>Bạn có muốn nắm được doanh thu bán hàng cụ thể đến từng ngày, lịch sử mua hàng, doanh số bán hàng của
+            từng nhân viên hay công nợ từng chi nhánh
+          </p>
         </div>
       </div>
     </div>
@@ -349,7 +328,7 @@
         </div>
       </div>
       <div class="col-md-2">
-        <img src="./assets/img/salon.svg" class="img-fluid img-thumbnail mb-4" alt="Image 1">
+        <img src="./assets/img/Group 644.png" class="img-fluid img-thumbnail mb-4" alt="Image 1">
         <p class="card-text" style="font-size: 16px;line-height: 24px;">
           Lưu ý : <span style="color: #EB5757;">Gói cơ bản</span> chỉ áp dụng cho 1 cửa hàng, để
           mua thêm cửa hàng mời quý khách nâng cấp lên gói
@@ -387,16 +366,15 @@
       </div>
     </div>
   </div>
-  <div class="container-fluid" style="position: relative;">
-    <img src="./assets/img/background.svg" alt="" style="width: 100%; height: auto;">
-    <div class="justify-content-center"
-      style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+  <div class="container-fluid" style="background-image: url('./assets/img/background.svg');">
+    <div class="justify-content-center" style="padding: 39px;">
       <h2 class="text-center" style="color: #fff;">
         Hãy thử miễn phí phần mềm
-        trước, vSalon sẽ tư vấn cho bạn gói dịch vụ phù hợp sau nhé !
+        trước, vSalon sẽ tư vấn cho
+        bạn gói dịch vụ phù hợp sau nhé !
         <br>
         <button type="button" class="btn btn-register"
-          style="width: 15%; border-radius: 5%; border: 1px #fff solid;">Dùng thử ngay</button>
+          style="width: 15%; border-radius: 36px; border: 1px #fff solid; margin-top: 31px;">Dùng thử ngay</button>
       </h2>
     </div>
   </div>
@@ -421,9 +399,9 @@
     </div>
   </div>
   <div class="container-fluid" style="background-image: url('./assets/img/Wixg4b3zza.png'); background-size: cover;">
-    <div class="col-md-6 customerIntro">
+    <div class="customerIntro">
       <br>
-      <h1 class="d-flex justify-content-center" style="margin-bottom: 20px;">
+      <h1 class="d-flex justify-content-center" style="margin-bottom: 15px;">
         Lắng nghe cảm nhận của khách hàng về<span class="span" style="color: #3BB54A; margin-left: 8px;">
           vSalon</span>
       </h1>
@@ -481,19 +459,22 @@
     <!-- <img src="./assets/img/suhailongKH.svg" alt=""> -->
   </div>
 
-  <div class="container-fluid">
+  <div class="container-fluid" style="margin-top: 64px;">
     <h3 class="justify-content-center d-flex">Hơn <span style="color: #EFC01C; margin: 0 5px;">5,000</span> doanh
       nghiệp, chủ shop đang
       quản lý cửa hàng như thế nào?</h3>
     <p class="justify-content-center d-flex">Đăng ký dùng thử miễn phí 30 ngày để khám phá</p>
     <form class="justify-content-center d-flex" style="margin-left: auto;">
-      <div class="input-group mb-3 align-items-center" style="width: 40%; border-radius: 10%;">
-        <div class="input-group-text" style="border-right: none; background-color: #fff;"><img
+      <div class="input-group mb-3 align-items-center"
+        style="width: 40%; border-radius: 32px; border: 1px solid #F2F2F2; gap: 16px;">
+        <div class="input-group-text" style="border: none; background-color: #fff; height: 90%;"><img
             src="./assets/img/email.svg" alt=""></div>
-        <input type="text" class="form-control" placeholder="Nhập mail hoặc số điện thoại của bạn" style="width: 50%; "
-          data-src="">
+        <input type="text" class="form-control inputForm" placeholder="Nhập mail hoặc số điện thoại của bạn"
+          style="width: 65%;  border: none;" data-src="">
         <button class="btn btn-success" type="submit"
-          style="border-radius: 10%; background: linear-gradient(to right, #3BB54A, #7EC341);">Đăng ký ngay</button>
+          style="border-radius: 32px; background: linear-gradient(to right, #3BB54A, #7EC341); gap: 4px;">Đăng
+          ký
+          ngay</button>
       </div>
     </form>
   </div>
@@ -562,7 +543,21 @@
       prevEl: ".swiper-button-prev",
     },
   });
+</script>
 
+<script>
+  $(document).ready(function () {
+    $('.figure-caption').on('click', function () {
+      var target = $(this).data('target');
+      $('.collapse').not(target).collapse('hide');
+
+      $('.figure-caption').removeClass('clicked');
+      $(this).addClass('clicked');
+    });
+  });
+
+  let collapse = $("#collapsibleNavbar");
+  let isCollapsed = false;
 
 </script>
 
