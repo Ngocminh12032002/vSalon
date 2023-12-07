@@ -29,9 +29,6 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
     crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="./assets/css/repository.css">
-  <link rel="stylesheet" href="./assets/css/repository.scss">
-
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -47,9 +44,14 @@
   <div class="container">
     <nav class="navbar navbar-expand-sm" style="background-color: #fff">
       <div class="container-fluid">
-        <div class="navbar-brand col-md-2">
+        <div class="navbar-brand col-md-2" style="width: 70%;">
           <img src="./assets/img/logo.svg" alt="Home icon" />
         </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" id="navbar-toggler-btn">
+          <span class="navbar-toggler-icon" style="color: #2F4858;">
+            <i class="fa-solid fa-sliders"></i>
+          </span>
+        </button>
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
           <ul class="navbar-nav">
             <li class="nav-item">
@@ -67,7 +69,7 @@
             <li class="nav-item">
               <a class="nav-link active" href="#">Phản hồi</a>
             </li>
-            <li class="nav-item d-flex align-items-center">
+            <li class="nav-item d-flex align-items-center ">
               <img src="./assets/img/vietnam-flag.svg" alt="Home icon" class="flag" alt="Flag" class="flag" />
               <a class="nav-link active" href="#">VI</a>
               <div class="arrow-icon"></div>
@@ -76,11 +78,6 @@
           <button type="button" class="btn btn-register">Đăng ký</button>
           <button type="button" class="btn btn-login">Đăng nhập</button>
         </div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-          <span class="navbar-toggler-icon" style="color: #2F4858;">
-            <i class="fa-solid fa-sliders"></i>
-          </span>
-        </button>
       </div>
     </nav>
   </div>
@@ -558,6 +555,21 @@
 
   let collapse = $("#collapsibleNavbar");
   let isCollapsed = false;
+
+</script>
+
+<script>
+  document.getElementById('navbar-toggler-btn').addEventListener('click', function () {
+    var collapsibleNavbar = document.getElementById('collapsibleNavbar');
+    if (collapsibleNavbar.classList.contains('show')) {
+      collapsibleNavbar.classList.remove('show');
+    } else {
+      collapsibleNavbar.classList.add('show');
+    }
+  });
+</script>
+
+<script>
 
 </script>
 

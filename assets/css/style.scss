@@ -1,3 +1,42 @@
+@media (min-width: 375px) and (max-width: 576px) {
+  .navbar-toggler {
+    display: block !important;
+  }
+
+  .navbar-collapse {
+    display: none !important;
+  }
+
+  .navbar-collapse.show {
+    display: block !important;
+  }
+
+  .navTabDetail {
+    display: block !important;
+  }
+
+  .navTabDetail > img {
+    width: 100%;
+  }
+
+  .navbar-brand {
+    width: 70% !important;
+  }
+
+  .carousel-item {
+    width: 100%;
+    height: 100%;
+  }
+
+  #demo .carousel-item img {
+    src: url("../img/giaiphapdientoan.svg");
+  }
+
+  #swiperImages > h3 {
+    display: block !important;
+  }
+}
+
 html,
 body {
   position: relative;
@@ -15,11 +54,12 @@ body {
 
 //CSS cho navbar
 .navbar-nav {
-  width: 100%;
+  width: 75%;
 }
 
 .nav-item {
-  margin-right: 2em;
+  margin-right: 12px;
+  width: max-content;
 }
 
 .nav-item > .nav-link {
