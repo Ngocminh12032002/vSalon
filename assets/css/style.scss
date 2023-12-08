@@ -162,7 +162,7 @@
   }
 
   .navbar-expand-sm #collapsibleNavbar.show {
-    display: block;
+    display: block !important;
   }
 
   #formRegister .formRegister-div {
@@ -208,10 +208,6 @@
 
   #tryit {
     width: 40% !important;
-  }
-
-  .basicCheck {
-    
   }
 }
 
@@ -317,7 +313,8 @@ body {
 }
 
 .custom-carousel-item {
-  border: 1px solid #000;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
   box-sizing: border-box;
   transform: scale(0.5, 0.75);
 }
@@ -327,7 +324,7 @@ body {
 }
 
 .swiper {
-  width: 100%;
+  width: 80%;
   height: 100%;
 }
 
