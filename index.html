@@ -36,7 +36,7 @@
 </head>
 <style>
   .figure-caption.clicked img {
-    filter: hue-rotate(120deg);
+    /* filter: hue-rotate(120deg); */
   }
 </style>
 
@@ -102,7 +102,10 @@
     <h3 class="d-flex justify-content-center">
       Lợi ích khi sử dụng<span class="span">vSalon</span>
     </h3>
-    <h6 class="d-flex justify-content-center">Hãy để chúng tôi đồng hành cùng thành công của bạn </h6>
+    <p class="d-flex justify-content-center" style="font-size: 16px; line-height: 24px; text-align: center;">Hãy
+      để
+      chúng tôi đồng hành cùng
+      thành công của bạn </p>
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
@@ -131,13 +134,21 @@
               cho khách.</p>
           </div>
         </div>
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#swiperImages" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#swiperImages" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#swiperImages" data-bs-slide-to="2"></button>
+        </div>
       </div>
       <div class="swiper-button-next" style="color: #fff;"></div>
       <div class="swiper-button-prev" style="color: #fff;"></div>
     </div>
   </div>
 
-  <div class="container" style="margin-top: 5em;">
+  <div class="container" style="margin-top: 5em;" id="vSalonFunction">
+    <h3 class="d-flex justify-content-center">
+      Hệ sinh thái<span class="span" style="margin-left: 4px; color: #3bb54a">vSalon</span>
+    </h3>
     <nav>
       <div class="nav justify-content-center" id="nav-tab" role="tablist">
         <figure class="figure align-items-center justify-content-center figure-caption" data-bs-toggle="collapse"
@@ -298,7 +309,7 @@
     </h3>
     <p class="text-center">Hãy lựa chọn gói giải pháp phù hợp với nhu cầu của bạn và dùng thử trong 30 ngày</p>
     <div class="row justify-content-center">
-      <div class="col-md-2 basicCheck card">
+      <div class="col-md-3 basicCheck card">
         <h3 class="text-center">Gói cơ bản</h3>
         <p class="text-center">Dành cho những cửa hàng nhỏ, mới bắt đầu kinh doanh</p>
         <h2 class="text-center">139,000 vnd</h2>
@@ -321,18 +332,19 @@
           </div>
           <br>
           <hr style="border-top: 1px dashed #000; width: 100%; margin: 20px 0;">
-          <button type="button" class="btn btn-register" style="width: 80%; border-radius: 5%;">Dùng thử ngay</button>
+          <button type="button" class="btn btn-register" style="width: 80%; border-radius: 36px; ">Dùng thử
+            ngay</button>
         </div>
       </div>
-      <div class="col-md-2">
-        <img src="./assets/img/Group 644.png" class="img-fluid img-thumbnail mb-4" alt="Image 1">
+      <div class="col-md-3 structureCheck">
+        <img id="structure" src="./assets/img/Group 644.png" class="img-fluid img-thumbnail mb-4" alt="Image 1">
         <p class="card-text" style="font-size: 16px;line-height: 24px;">
           Lưu ý : <span style="color: #EB5757;">Gói cơ bản</span> chỉ áp dụng cho 1 cửa hàng, để
           mua thêm cửa hàng mời quý khách nâng cấp lên gói
           <span style="color: #EB5757;">nâng cao</span>.
         </p>
       </div>
-      <div class="col-md-2 card">
+      <div class="col-md-3 basicCheck card">
         <h3 class="text-center">Gói nâng cao</h3>
         <p class="text-center">Dành cho mô hình kinh doanh chuỗi</p>
         <h2 class="text-center">289,000 vnd</h2>
@@ -358,7 +370,7 @@
             <p>Không phí khởi tạo</p>
           </div>
           <hr style="border-top: 1px dashed #000; width: 100%; margin: 20px 0;">
-          <button type="button" class="btn btn-register" style="width: 80%; border-radius: 5%;">Dùng thử ngay</button>
+          <button type="button" class="btn btn-register" style="width: 80%; border-radius: 36px;">Dùng thử ngay</button>
         </div>
       </div>
     </div>
@@ -370,14 +382,14 @@
         trước, vSalon sẽ tư vấn cho
         bạn gói dịch vụ phù hợp sau nhé !
         <br>
-        <button type="button" class="btn btn-register"
+        <button type="button" class="btn btn-register" id="tryit"
           style="width: 15%; border-radius: 36px; border: 1px #fff solid; margin-top: 31px;">Dùng thử ngay</button>
       </h2>
     </div>
   </div>
   <div class="container-fluid" style="position: relative;">
     <div class="row justify-content-center">
-      <div class="col-md-3" style="margin-left: 15%;">
+      <div class="col-md-3 appUser" style="margin-left: 15%;">
         <h3 class="d-flex" style="margin-top: 2em;">
           Ứng dụng quản lý salon miễn phí
         </h3>
@@ -457,12 +469,12 @@
   </div>
 
   <div class="container-fluid" style="margin-top: 64px;">
-    <h3 class="justify-content-center d-flex">Hơn <span style="color: #EFC01C; margin: 0 5px;">5,000</span> doanh
-      nghiệp, chủ shop đang
-      quản lý cửa hàng như thế nào?</h3>
+    <h3 class="justify-content-center d-flex" style="white-space: pre-line;">Hơn <span
+        style="color: #EFC01C; margin: 0 5px; height: fit-content;">5,000</span> doanh nghiệp, chủ shop đang quản lý cửa
+      hàng như thế nào?</h3>
     <p class="justify-content-center d-flex">Đăng ký dùng thử miễn phí 30 ngày để khám phá</p>
-    <form class="justify-content-center d-flex" style="margin-left: auto;">
-      <div class="input-group mb-3 align-items-center"
+    <form class="justify-content-center d-flex" style="margin-left: auto;" id="formRegister">
+      <div class="input-group mb-3 align-items-center formRegister-div"
         style="width: 40%; border-radius: 32px; border: 1px solid #F2F2F2; gap: 16px;">
         <div class="input-group-text" style="border: none; background-color: #fff; height: 90%;"><img
             src="./assets/img/email.svg" alt=""></div>
@@ -477,7 +489,7 @@
   </div>
   </div>
 
-  <div class="container-fluid" style="background-color: #2F4858; margin-top: 5%;">
+  <div class="container-fluid footer" style="background-color: #2F4858; margin-top: 5%;">
     <img src="./assets/img/footer.svg" alt="">
     <div class="row">
       <div class="col-md-3" style="color: white; margin-left: 5%;">

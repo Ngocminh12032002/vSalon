@@ -1,22 +1,47 @@
-@media (min-width: 375px) and (max-width: 576px) {
+@media (min-width: 375px) and (max-width: 575px) {
   .navbar-toggler {
-    display: block !important;
+    display: block;
   }
 
   .navbar-collapse {
-    display: none !important;
+    display: none;
   }
 
   .navbar-collapse.show {
+    display: block;
+  }
+
+  #navbarDetailSalon .d-flex {
     display: block !important;
   }
 
-  .navTabDetail {
+  #navbarDetailSchedule .d-flex {
+    display: block !important;
+  }
+
+  #navbarDetailHumanResource .d-flex {
+    display: block !important;
+  }
+
+  #navbarDetailBuy .d-flex {
+    display: block !important;
+  }
+
+  #navbarDetailStorage .d-flex {
+    display: block !important;
+  }
+
+  #navbarDetailPerson .d-flex {
+    display: block !important;
+  }
+
+  #navbarDetailReport .d-flex {
     display: block !important;
   }
 
   .navTabDetail > img {
     width: 100%;
+    height: fit-content;
   }
 
   .navbar-brand {
@@ -28,12 +53,165 @@
     height: 100%;
   }
 
-  #demo .carousel-item img {
-    src: url("../img/giaiphapdientoan.svg");
+  .navTabDetailDescription {
+    margin-top: 1em !important;
+    margin-left: 1em !important ;
   }
 
   #swiperImages > h3 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #swipperImages > span {
+    white-space: normal;
+  }
+
+  .swiper-button-next {
+    display: none !important;
+  }
+
+  .swiper-button-prev {
+    display: none !important;
+  }
+
+  #swiperImages {
+    border: none !important;
+    border-bottom-left-radius: 0% !important;
+    border-bottom-right-radius: 0% !important;
+  }
+
+  .custom-carousel-item {
+    transform: none !important;
+  }
+
+  #nav-tab {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #nav-tab .figure {
+    // position: relative;
+    width: 100% !important;
+    background-color: #ccc !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+
+  .figure span {
+    display: none;
+  }
+
+  .priceDetail > h3 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .priceDetail > span {
+    white-space: normal;
+  }
+
+  .basicCheck #structure {
+    display: none !important;
+  }
+
+  .structureCheck {
+    order: 1;
+  }
+
+  #tryit {
+    width: 50% !important;
+  }
+
+  .appUser h3 {
+    flex-direction: column;
+    align-items: center;
+    display: flex !important;
+  }
+
+  .appUser > span {
+    white-space: normal;
+  }
+
+  #formRegister .formRegister-div {
+    width: 80% !important;
+  }
+
+  #formRegister .formRegister-div input {
+    width: 25% !important;
+  }
+
+  .footer .col-md-3 {
+    margin-left: 0% !important;
+  }
+
+  .footer .col-md-1 {
+    display: none;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 1668px) {
+  .navbar-toggler {
     display: block !important;
+  }
+
+  .navbar-expand-sm #collapsibleNavbar {
+    display: none !important;
+  }
+
+  .navbar-expand-sm #collapsibleNavbar.show {
+    display: block;
+  }
+
+  #formRegister .formRegister-div {
+    width: 60% !important;
+  }
+
+  #formRegister .formRegister-div .inputForm {
+    width: 40% !important;
+  }
+
+  #navbarDetailSalon .d-flex {
+    display: block !important;
+  }
+
+  #navbarDetailSchedule .d-flex {
+    display: block !important;
+  }
+
+  #navbarDetailHumanResource .d-flex {
+    display: block !important;
+  }
+
+  #navbarDetailBuy .d-flex {
+    display: block !important;
+  }
+
+  #navbarDetailStorage .d-flex {
+    display: block !important;
+  }
+
+  #navbarDetailPerson .d-flex {
+    display: block !important;
+  }
+
+  #navbarDetailReport .d-flex {
+    display: block !important;
+  }
+
+  .navTabDetail > img {
+    width: 100%;
+    height: fit-content;
+  }
+
+  #tryit {
+    width: 40% !important;
+  }
+
+  .basicCheck {
+    
   }
 }
 
