@@ -450,12 +450,21 @@ body {
 }
 
 .function-nav {
-  margin-top: 60px;
-  width: 100%;
+  margin: 60px auto;
+  width: 80% !important;
+  display: block;
+  text-align: center;
+}
+
+#nav-tab {
+  justify-content: center !important;
+  align-items: center;
+  text-align: center;
+  display: flex;
 }
 
 .function-nav figure {
-  margin-right: 3%;
+  // margin-right: 3%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -465,8 +474,117 @@ body {
 
 .function-nav figure span {
   position: absolute;
-  height: 5%;
+  height: 39.5px;
   border-right: 2px solid #e0e0e0;
-  margin-left: 2.8%;
-  margin-top: 2%;
+  margin-left: 4.5%;
+  // margin-top: 1%;
+  stroke-width: 1px;
+  stroke: var(--Gray-5, #e0e0e0);
+}
+
+.figure-object {
+  margin-left: 27px;
+}
+
+figcaption {
+  color: var(--color-01, #333) !important;
+  font-size: 15px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: normal !important;
+  padding-top: 8px;
+  width: auto;
+  text-align: center;
+  justify-content: center;
+}
+
+.function-nav .function-space {
+  width: 89px;
+  height: 3px;
+  flex-shrink: 0;
+  border-radius: 3px;
+  background: var(--color-02, #3bb54a);
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 12px;
+  display: none;
+}
+
+.clicked .figure-font {
+  color: var(--color-02, #3bb54a) !important;
+}
+
+.navTabDetail {
+  padding: 0 !important;
+  width: 80%;
+}
+
+.functionDetail {
+  margin-bottom: 105px;
+}
+
+.functionDetail img {
+  margin-right: 48px;
+  position: relative;
+  border-radius: 10px;
+  border: 2px solid var(--color-02, #3bb54a);
+}
+
+// .function-image::after {
+//   content: "";
+//   width: 20%;
+//   height: 24%;
+//   top: 137%;
+//   left: 29%;
+//   flex-shrink: 0;
+//   position: absolute;
+//   border-radius: 10px;
+//   background: #e7f6e9;
+// }
+
+.functionDetail h6 {
+  color: var(--2-f-4858, #2f4858);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px; /* 150% */
+  margin-top: 60px;
+}
+
+.functionDetail p {
+  color: #4a6069;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+}
+
+// CSS price
+.priceDetail h3 {
+  text-align: center;
+  color: var(--2-f-4858, #2f4858);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.priceDetail h3 span {
+  color: var(--color-02, #3bb54a);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.priceDetail .priceDetail-text {
+  color: #4a6069;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 20px;
+  margin-bottom: 80px;
 }
