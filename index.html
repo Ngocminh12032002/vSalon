@@ -5,10 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>VSalon</title>
-  <link rel="stylesheet" href="./assets/css/style.scss" />
   <link rel="stylesheet" href="./assets/css/style.css" />
   <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="./bootstrap-5.0.2-dist/js/bootstrap.min.js" />
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
@@ -78,27 +76,24 @@
   <div id="demo" class="carousel slide" data-bs-ride="carousel">
     <!-- The slideshow/carousel -->
     <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="./assets/img/slide1.svg" alt="Giải pháp điện toán đám mây" class="d-block" />
+      <div class="carousel-item active imgBackground">
+        <div class="carousel-caption">
+          <p>Giải pháp điện toán đám mây <span>quản lý Salon</span> hiệu quả nhất</p>
+          <button>Dùng thử miễn phí</button>
+        </div>
+      </div>
+      <!-- <div class="carousel-item imgBackground">
         <div class="carousel-caption d-none- d-md-block">
           <p>Giải pháp điện toán đám mây <span>quản lý Salon</span> hiệu quả nhất</p>
           <button>Dùng thử miễn phí</button>
         </div>
       </div>
-      <div class="carousel-item">
-        <img src="./assets/img/slide2.svg" alt="Tương tác với khách hàng" class="d-block" />
+      <div class="carousel-item imgBackground">
         <div class="carousel-caption d-none- d-md-block">
           <p>Giải pháp điện toán đám mây <span>quản lý Salon</span> hiệu quả nhất</p>
           <button>Dùng thử miễn phí</button>
         </div>
-      </div>
-      <div class="carousel-item">
-        <img src="./assets/img/slide3.svg" alt="Gắn kết qua di động" class="d-block" />
-        <div class="carousel-caption d-none- d-md-block">
-          <p>Giải pháp điện toán đám mây <span>quản lý Salon</span> hiệu quả nhất</p>
-          <button>Dùng thử miễn phí</button>
-        </div>
-      </div>
+      </div> -->
     </div>
   </div>
 
@@ -112,7 +107,7 @@
       chúng tôi đồng hành cùng
       thành công của bạn </p>
     <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
+      <div class="swiper-wrapper mySwiperWrapper">
         <div class="swiper-slide mySwiperSlide">
           <div class="text-center custom-carousel-item">
             <img src="./assets/img/dieuphoilichhen.svg" alt="Điều phối lịch hẹn" class="d-block mx-auto swiperImage" />
@@ -120,7 +115,7 @@
             <p class="swiper-slide-description">Không còn lo lắng khi quên lịch hẹn với khách hàng.</p>
           </div>
         </div>
-        <div class="swiper-slide mySwiperSlide">
+        <div class="swiper-slide mySwiperSlide" style="z-index: 1;">
           <div class="text-center custom-carousel-item">
             <img src="./assets/img/quanlyhieuqua.svg" alt="Quản lý hiệu quả" class="d-block mx-auto swiperImage" />
             <p class="swiper-slide-title">Quản lý hiệu quả</p>
@@ -139,15 +134,19 @@
       </div>
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
-      <div class="swiper-pagination"></div>
+      <div class="swiper-pagination">
+        <span class="pagination-bullet"></span>
+        <span class="pagination-bullet"></span>
+        <span class="pagination-bullet"></span>
+      </div>
     </div>
   </div>
 
   <!-- Natural function  -->
   <div class="container-fluid" id="vSalonFunction">
-    <h3 class="justify-content-center function-title">
-      Hệ sinh thái<span class="span">vSalon</span>
-    </h3>
+    <p class="justify-content-center function-title">
+      Hệ sinh thái <span class="span">vSalon</span>
+    </p>
     <nav class="function-nav">
       <div class="nav" id="nav-tab" role="tablist">
         <figure class="figure align-items-center justify-content-center figure-object figure-caption"
@@ -155,9 +154,11 @@
           <div class="function-image">
             <img src="./assets/img/qlysalon.svg" alt="" class="text-center">
           </div>
-          <span></span></i>
           <figcaption class="figure-caption figure-font" data-bs-toggle="collapse" data-bs-target="#navbarDetailSalon">
             Quản lý chuỗi salon</figcaption>
+          <div class="function-narrow figure-font">
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
           <div class="function-space">
           </div>
         </figure>
@@ -170,6 +171,9 @@
           <figcaption class="figure-caption figure-font" data-bs-toggle="collapse"
             data-bs-target="#navbarDetailSchedule">Quản lý
             lịch hẹn</figcaption>
+          <div class="function-narrow figure-font">
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
           <div class="function-space">
           </div>
         </figure>
@@ -180,6 +184,9 @@
           </div>
           <span></span></i>
           <figcaption class="figure-caption figure-font">Quản lý thành viên</figcaption>
+          <div class="function-narrow figure-font">
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
           <div class="function-space">
           </div>
         </figure>
@@ -190,6 +197,9 @@
           </div>
           <span></span></i>
           <figcaption class="figure-caption figure-font">Bán hàng</figcaption>
+          <div class="function-narrow figure-font">
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
           <div class="function-space">
           </div>
         </figure>
@@ -200,6 +210,9 @@
           </div>
           <span></span></i>
           <figcaption class="figure-caption figure-font">Quản lý kho</figcaption>
+          <div class="function-narrow figure-font">
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
           <div class="function-space">
           </div>
         </figure>
@@ -210,6 +223,9 @@
           </div>
           <span></span></i>
           <figcaption class="figure-caption figure-font">Quản lý nhân viên</figcaption>
+          <div class="function-narrow figure-font">
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
           <div class="function-space">
           </div>
         </figure>
@@ -219,6 +235,9 @@
             <img src="./assets/img/baocaothongke.svg" alt="" class="text-center">
           </div>
           <figcaption class="figure-caption figure-font">Báo cáo thống kê</figcaption>
+          <div class="function-narrow figure-font">
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
           <div class="function-space">
           </div>
         </figure>
@@ -584,11 +603,15 @@
 </body>
 <script>
   var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3,
-    spaceBetween: 30,
+    // slidesPerView: 3,
+    spaceBetween: -60,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
   });
 </script>
@@ -602,17 +625,19 @@
       $('.figure-caption').removeClass('clicked');
       $(this).addClass('clicked');
 
-      $(".function-space").css("display", "none");
-      $(this).closest('figure').find('.function-space').css("display", "block");
+      if (window.innerWidth > 768) { // Thực hiện chỉ khi độ rộng lớn hơn 768px
+        $(".function-space").css("display", "none");
+        $(this).closest('figure').find('.function-space').css("display", "block");
+      } else {
+        $(".function-space").css("display", "none"); // Ẩn .function-space trên màn hình nhỏ
+      }
     });
   });
-
-  let collapse = $("#collapsibleNavbar");
-  let isCollapsed = false;
-
 </script>
 
 <script>
+  let collapse = $("#collapsibleNavbar");
+  let isCollapsed = false;
   document.getElementById('navbar-toggler-btn').addEventListener('click', function () {
     var collapsibleNavbar = document.getElementById('collapsibleNavbar');
     if (collapsibleNavbar.classList.contains('show')) {

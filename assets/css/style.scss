@@ -1,4 +1,23 @@
 @media (min-width: 375px) and (max-width: 575px) {
+  //CSS navbar
+  .nav-header {
+    position: relative;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    z-index: 1;
+  }
+
+  .nav-header-logo {
+    padding: 0 !important;
+    margin-top: 8px;
+    margin-left: 15px;
+  }
+
+  .nav-header-logo img {
+    width: 50%;
+  }
+
   .navbar-toggler {
     display: block;
   }
@@ -9,6 +28,19 @@
 
   .navbar-collapse.show {
     display: block;
+    z-index: 15;
+    margin-bottom: 10px;
+  }
+
+  //CSS slide show
+  #demo {
+    height: 566px;
+  }
+
+  #demo .carousel-inner .carousel-item .carousel-caption {
+    width: 85%;
+    left: 13px !important;
+    top: 11px !important;
   }
 
   #navbarDetailSalon .d-flex {
@@ -58,6 +90,14 @@
     margin-left: 1em !important ;
   }
 
+  .mySwiper {
+    width: 100% !important;
+  }
+
+  #swiperImages {
+    padding-bottom: 28px !important;
+  }
+
   #swiperImages > h3 {
     flex-direction: column;
     align-items: center;
@@ -67,28 +107,116 @@
     white-space: normal;
   }
 
+  .swiper-button-next {
+    display: none !important;
+  }
+
+  .swiper-button-prev {
+    display: none !important;
+  }
+
+  .mySwiperWrapper {
+    width: fit-content;
+  }
+
+  .swiper-slide-active {
+    z-index: 2;
+  }
+
+  .swiper-slide-next {
+    display: none !important;
+  }
   .custom-carousel-item {
     transform: none !important;
   }
 
-  #nav-tab {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  //CSS hệ sinh thái
+  #vSalonFunction p {
+    display: block !important;
+    color: var(--2-f-4858, #2f4858);
+    text-align: center;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 40px;
+    margin-bottom: 31px;
+  }
+
+  #vSalonFunction p span {
+    color: var(--color-02, #3bb54a);
+  }
+
+  .functionDetail .navTabDetailImg {
+    margin-top: 12px;
   }
 
   #nav-tab .figure {
-    // position: relative;
-    width: 100% !important;
-    background-color: #ccc !important;
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: flex-start !important;
+    width: 100%;
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: var(--Gray-6, #f2f2f2);
+    display: flex;
+    flex-direction: row;
+    justify-content: left !important;
+    padding-left: 12px;
+    margin-left: 0;
   }
 
   .figure span {
     display: none;
   }
+
+  #vSalonFunction .function-nav {
+    margin-bottom: 0;
+  }
+
+  .function-image img {
+    width: 36px !important;
+    padding-right: 12px;
+  }
+
+  #nav-tab .figure .figure-caption {
+    width: 50%;
+    text-align: left;
+  }
+  .function-narrow {
+    margin-left: 80px;
+  }
+
+  #vSalonFunction i {
+    display: block !important;
+  }
+
+  .figure-caption {
+    color: var(--Gray-1, #333);
+    font-size: 14px !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    line-height: normal;
+  }
+
+  .functionDetail .navTabDetail h6 {
+    color: var(--2-f-4858, #2f4858);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; /* 166.667% */
+    margin-top: 20px !important;
+    margin-bottom: 14px !important;
+  }
+
+  .functionDetail .navTabDetail .navTabDetailDescription p {
+    color: #4a6069;
+    font-size: 14px !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    line-height: 21px !important; /* 150% */
+    text-align: left !important;
+    margin: 14px 0 !important;
+  }
+  //CSS cho gias
 
   .priceDetail > h3 {
     flex-direction: column;
@@ -99,18 +227,38 @@
     white-space: normal;
   }
 
-  .basicCheck #structure {
-    display: none !important;
+  .priceDetail .priceDetail-text {
+    display: none;
   }
 
+  .priceDetailGeneral {
+    margin-bottom: 0 !important;
+    padding-bottom: 38px !important;
+  }
+
+  .card {
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-bottom: 28px;
+  }
+
+  .structureCheck #structure {
+    display: none !important;
+  }
+  .card hr {
+    width: 100%;
+  }
   .structureCheck {
     order: 1;
   }
 
+  //try software
   #tryit {
     width: 50% !important;
   }
 
+  //app manage
   .appUser h3 {
     flex-direction: column;
     align-items: center;
@@ -207,20 +355,24 @@ body {
   position: relative;
   font-family: Inter;
 }
+img {
+  width: 100%;
+}
 
 //CSS cho navbar
 .nav-header {
   width: 65%;
-  height: 80px;
+  // height: ;
   display: flex;
   justify-content: center;
   margin: 0 auto;
 }
 
 .nav-header-logo {
-  width: 149px;
+  // width: 149px;
   height: 59px;
   flex-shrink: 0;
+  margin-bottom: 10px;
 }
 
 .nav-item {
@@ -287,15 +439,46 @@ body {
 }
 
 //CSS cho slide show
+#demo {
+  height: 566px;
+}
+.carousel-inner {
+  height: 100%;
+}
+
+.imgBackground:nth-child(1) {
+  background-image: url("../img/slide1.svg");
+  height: 100%;
+  background-size: cover;
+  // background-position: center;
+  background-repeat: no-repeat;
+}
+
+.imgBackground:nth-child(2) {
+  background-image: url("../img/slide2.svg");
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.imgBackground:nth-child(3) {
+  background-image: url("../img/slide3.svg");
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .carousel-item img {
   width: 100%;
 }
+
 .carousel-caption {
-  position: absolute;
   right: 50% !important;
   bottom: 40% !important;
   left: 20% !important;
-  z-index: 10;
+
   padding-top: 20px;
   padding-bottom: 20px;
   color: #fff;
@@ -357,6 +540,7 @@ body {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  text-align: center;
 }
 
 .mySwiper {
@@ -543,6 +727,9 @@ figcaption {
 //   border-radius: 10px;
 //   background: #e7f6e9;
 // }
+.function-image img {
+  width: 50%;
+}
 
 .functionDetail h6 {
   color: var(--2-f-4858, #2f4858);
@@ -559,6 +746,10 @@ figcaption {
   font-style: normal;
   font-weight: 500;
   line-height: 24px; /* 150% */
+}
+
+#vSalonFunction i {
+  display: none;
 }
 
 // CSS price
@@ -778,6 +969,7 @@ hr {
 }
 
 .appIcon img {
+  width: 20%;
   margin-right: 16px;
   margin-bottom: 65px;
 }
@@ -902,6 +1094,10 @@ hr {
   display: block;
 }
 
+.swiper-pagination-bullet-active {
+  background-color: #3bb54a !important;
+}
+
 .customerService {
   background-image: url("../img/customerUseSalon.svg");
   background-size: cover;
@@ -992,14 +1188,14 @@ hr {
 }
 
 .input-group-text {
-  border: none;
-  background-color: #fff;
+  border: none !important;
+  background-color: #fff !important;
   height: 90%;
 }
 
 .inputForm {
   width: 65%;
-  border: none;
+  border: none !important;
   color: var(--8-ba-0-a-8, #8ba0a8);
   font-size: 16px;
   font-style: normal;
