@@ -992,6 +992,28 @@ hr {
   height: 3px;
   background-color: #3bb54a;
   border-radius: 7px;
+  margin-bottom: 24px;
+}
+
+footer {
+  background: #fff;
+  height: 40px;
+  text-align: center;
+  align-items: center;
+  color: var(--677987, #677987);
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 171.429% */
+}
+
+footer span {
+  color: var(--3-bb-54-a, #3bb54a);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
 }
 
 /*# sourceMappingURL=style.css.map */
