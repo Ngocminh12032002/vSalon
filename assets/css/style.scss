@@ -1,17 +1,15 @@
 @media (min-width: 375px) and (max-width: 575px) {
   //CSS navbar
+  .homeImg {
+    width: 50% !important;
+  }
+
   .nav-header {
     position: relative;
     margin: 0 !important;
     padding: 0 !important;
     width: 100% !important;
     z-index: 1;
-  }
-
-  .nav-header-logo {
-    padding: 0 !important;
-    margin-top: 8px;
-    margin-left: 15px;
   }
 
   .nav-header-logo img {
@@ -130,6 +128,8 @@
     transform: none !important;
   }
 
+
+
   //CSS hệ sinh thái
   #vSalonFunction p {
     display: block !important;
@@ -145,6 +145,10 @@
 
   #vSalonFunction p span {
     color: var(--color-02, #3bb54a);
+  }
+
+  .functionDetail {
+    margin-bottom: 5% !important;
   }
 
   .functionDetail .navTabDetailImg {
@@ -216,8 +220,43 @@
     text-align: left !important;
     margin: 14px 0 !important;
   }
-  //CSS cho gias
 
+  .functionDetail {
+    display: none;
+  }
+
+  .functionDetailIphone {
+    display: block !important;
+  }
+
+  .functionDetailIphone .navTabDetailImg {
+    border-radius: 10px;
+    border: 1px solid var(--Color-02, #3bb54a);
+  }
+
+  .functionDetailIphone .navTabDetailDescription h6 {
+    text-align: left !important;
+    color: var(--2-f-4858, #2f4858);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; /* 166.667% */
+  }
+
+  .functionDetailIphone .navTabDetailDescription p {
+    text-align: left !important;
+    color: #4a6069 !important;
+    font-size: 14px !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    line-height: 21px !important; /* 150% */
+    margin-top: 14px !important;
+  }
+
+  .function-space {
+    display: none;
+  }
+  //CSS cho gias
   .priceDetail > h3 {
     flex-direction: column;
     align-items: center;
@@ -259,7 +298,10 @@
   }
 
   //app manage
-  .appUser h3 {
+  .appManage {
+    margin: -10%;
+  }
+  .appUser p {
     flex-direction: column;
     align-items: center;
     display: flex !important;
@@ -269,6 +311,156 @@
     white-space: normal;
   }
 
+  .appManage {
+    width: 100% !important;
+    padding-bottom: 6%;
+  }
+  .appManage .appText {
+    display: flex !important;
+    text-align: center;
+  }
+
+  .appManage .appText p {
+    color: var(--2-f-4858, #2f4858);
+    text-align: center;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px; /* 150% */
+    width: 100%;
+  }
+
+  .appManage .appText span {
+    color: var(--Color-02, #3bb54a);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px;
+  }
+
+  .appManage .appText .appDetail {
+    color: #4a6069;
+    text-align: center;
+    font-size: 16px !important;
+    font-style: normal;
+    font-weight: 500 !important;
+    line-height: 24px !important; /* 150% */
+    margin-bottom: 12px;
+  }
+
+  // .appManage .appImagevSalon,
+  .appManage .appUser {
+    width: 40% !important;
+  }
+
+  .appManage .appImagevSalon {
+    width: 60% !important;
+  }
+
+  .appUser p,
+  .appUser span,
+  .appUser .function-space {
+    display: none !important;
+  }
+
+  .appImagevSalon img {
+    width: 80%;
+    margin: 15px;
+  }
+
+  .appIcon {
+    width: 85%;
+    margin-left: 35%;
+  }
+
+  .appManage .appUser .appIcon img {
+    width: 80%;
+    margin: 15px;
+  }
+
+  .appImagevSalon {
+    padding-right: 10px !important;
+  }
+
+  //CSS comment
+  .commentCustomer {
+    margin: 0 !important;
+  }
+  .commentCustomer .customerIntro .commentCustomerListen {
+    color: var(--2-f-4858, #2f4858);
+    text-align: center;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 42px; /* 150% */
+  }
+
+  .commentCustomer .customerIntro span {
+    color: var(--Color-02, #3bb54a);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px;
+  }
+
+  .commentCustomer .customerDetail {
+    color: #4a6069;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+  }
+
+  .cmtSwiper {
+    width: 100% !important;
+  }
+
+  .cmtSlide {
+    width: 100% !important;
+  }
+
+  .commentCustomer .swiper-wrapper .swiper-slide:nth-child(1) {
+    margin-left: 117% !important;
+  }
+  //CSS thanks customer
+  .customerService {
+    // position: relative;
+    // height: 75% !important;
+  }
+
+  .customerService .paraph p {
+    color: var(--Color-02, #3bb54a);
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; /* 166.667% */
+    text-transform: uppercase;
+  }
+
+  .customerService .paraph .paraph1 {
+    margin-bottom: 0;
+    width: 100%;
+  }
+  .customerService .paraph .paraph2 {
+    width: 100%;
+  }
+
+  .customerService .customerServiceImage {
+    display: block;
+    width: 330.941px;
+    height: 83.273px;
+    flex-shrink: 0;
+    margin-top: 107px;
+    margin-bottom: 57px;
+  }
+
+  .customerService .paraph {
+    position: relative;
+    padding-bottom: 50px;
+  }
+  //CSS register
   #formRegister .formRegister-div {
     width: 80% !important;
   }
@@ -284,9 +476,25 @@
   .footer .col-md-1 {
     display: none;
   }
+
+  //CSS present
+  .presentFooter .ImageFooter {
+    display: none;
+  }
+
+  .presentFooter .presentFooterIntro {
+    order: 1;
+  }
+  .presentFooter .presentContact {
+    order: 2;
+  }
+  .presentFooter .presentFooterLink {
+    order: 3;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 1668px) {
+
   .navbar-toggler {
     display: block !important;
   }
@@ -355,7 +563,8 @@ body {
   position: relative;
   font-family: Inter;
 }
-img {
+
+img:not(.ImageFooter, .imagePresent) {
   width: 100%;
 }
 
@@ -716,6 +925,9 @@ figcaption {
   border: 2px solid var(--color-02, #3bb54a);
 }
 
+.functionDetailIphone {
+  display: none;
+}
 // .function-image::after {
 //   content: "";
 //   width: 20%;
@@ -929,7 +1141,7 @@ hr {
   align-items: center;
 }
 
-.appManage .appUser p {
+.appManage p {
   color: var(--2-f-4858, #2f4858);
   font-size: 36px;
   font-style: normal;
@@ -938,7 +1150,7 @@ hr {
   width: 80%;
 }
 
-.appManage .appUser p span {
+.appManage p span {
   color: var(--color-02, #3bb54a);
   font-size: 36px;
   font-style: normal;
@@ -959,27 +1171,40 @@ hr {
   display: block;
 }
 
-.appManage .appUser .appDetail {
+.appManage .appDetail {
   color: #4a6069;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  margin-bottom: 114px;
+  margin-bottom: 50px;
 }
 
 .appIcon img {
   width: 20%;
   margin-right: 16px;
-  margin-bottom: 65px;
+  // margin-bottom: px;
 }
 
+.appText {
+  flex-direction: column;
+  align-items: center;
+  display: none;
+  width: 100%;
+}
+.appUser > span {
+  white-space: normal;
+}
+
+.appImagevSalon img {
+  width: 100%;
+}
 // comment customer
 .commentCustomer {
   background-image: url("../img/Wixg4b3zza.png");
   background-size: cover;
   padding-bottom: 108px;
-  margin-bottom: 108px;
+  // margin-bottom: 108px;
 }
 
 .customerIntro p {
@@ -1104,6 +1329,7 @@ hr {
   padding: 36.157px 83px 0px 0px;
   align-items: center;
   height: 45%;
+  padding-bottom: 20%;
 }
 .customerService .paraph {
   margin-top: 14%;
@@ -1138,6 +1364,9 @@ hr {
   margin-right: auto;
 }
 
+.customerService .customerServiceImage {
+  display: none;
+}
 //CSS register User
 .registerUser-title {
   color: var(--2-f-4858, #2f4858);
