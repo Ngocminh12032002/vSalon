@@ -422,6 +422,11 @@
     margin-left: 117% !important;
   }
   //CSS thanks customer
+  .customerService {
+    // position: relative;
+    // height: 75% !important;
+  }
+
   .customerService .paraph p {
     color: var(--Color-02, #3bb54a);
     text-align: center;
@@ -567,7 +572,6 @@ img:not(.ImageFooter, .imagePresent) {
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  width: 100%;
 }
 
 .homeImg {
@@ -577,23 +581,41 @@ img:not(.ImageFooter, .imagePresent) {
   flex: 1;
 }
 
-.nav-item .nav-link {
-  color: var(--Color-01, #333);
-
-  /* Body/01 */
+.nav-item {
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  // width: max-content;
+  margin-right: 38px;
+  width: max-content;
 }
 
-.navbar-flag {
+.nav-item > .nav-link {
+  color: var(--color-01, #333) !important;
+  padding: 0%;
+}
+
+//Css cho cờ
+.flag-and-arrow-container {
   display: flex;
-  justify-content: center;
+  align-items: center;
 }
 
-#collapsibleNavbar .btn-navbar-register {
+.flag {
+  width: 50px; /* Điều chỉnh kích thước của lá cờ */
+  margin-right: -2em;
+}
+
+.arrow-icon {
+  width: 10px; /* Điều chỉnh kích thước của mũi tên đi xuống */
+  height: 10px;
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.btn-register {
+  color: #fff !important; /* Màu chữ mặc định */
   border-radius: 22px !important;
   background: var(
     --main-color-1,
@@ -602,39 +624,27 @@ img:not(.ImageFooter, .imagePresent) {
   width: 115px;
   height: 38px;
   flex-shrink: 0;
-  color: #fff;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: 30px; /* 187.5% */
-  align-items: center;
-  justify-content: center;
-  display: flex;
   margin-right: 12px;
 }
 
-#collapsibleNavbar .btn-navbar-login {
+.btn-login {
+  border-radius: 33px !important;
+  border: 1.5px solid #3bb54a !important;
   width: 115px;
   height: 38px;
   flex-shrink: 0;
-  border-radius: 33px;
-  border: 1.5px solid #3bb54a;
-
-  color: #3bb54a;
+  color: #3bb54a !important;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: 30px; /* 187.5% */
-  justify-content: center;
-  align-items: center;
-  display: flex;
 }
 
-.nav-item {
-  margin-right: 38px;
-}
-
-// CSS slide show
+//CSS cho slide show
 #demo {
   height: 566px;
 }
@@ -646,8 +656,15 @@ img:not(.ImageFooter, .imagePresent) {
 .imgBackground {
   height: 100%;
   background-size: cover;
-  background-position: center;
+  // background-position: center;
   background-repeat: no-repeat;
+}
+
+.carousel-caption {
+  position: relative !important;
+  margin-top: 140px;
+  margin-left: 60px;
+  margin-right: 80px;
 }
 
 .carousel-caption p {
@@ -669,12 +686,6 @@ img:not(.ImageFooter, .imagePresent) {
   line-height: 57px;
 }
 
-.carousel-caption {
-  position: relative !important;
-  margin-top: 140px;
-  margin-left: 60px;
-}
-
 .carousel-caption button {
   max-width: 242px;
   height: 48px;
@@ -690,79 +701,6 @@ img:not(.ImageFooter, .imagePresent) {
   justify-content: left;
   display: block;
 }
-
-// //CSS cho slide show
-// #demo {
-//   height: 566px;
-// }
-// .carousel-inner {
-//   height: 100%;
-// }
-
-// .imgBackground:nth-child(1) {
-//   background-image: url("../img/slide1.svg");
-//   height: 100%;
-//   background-size: cover;
-//   // background-position: center;
-//   background-repeat: no-repeat;
-// }
-
-// .imgBackground:nth-child(2) {
-//   background-image: url("../img/slide2.svg");
-//   height: 100%;
-//   background-size: cover;
-//   background-position: center;
-//   background-repeat: no-repeat;
-// }
-
-// .imgBackground:nth-child(3) {
-//   background-image: url("../img/slide3.svg");
-//   height: 100%;
-//   background-size: cover;
-//   background-position: center;
-//   background-repeat: no-repeat;
-// }
-
-// .carousel-item img {
-//   width: 100%;
-// }
-
-// .carousel-caption {
-//   right: 50% !important;
-//   bottom: 40% !important;
-//   left: 20% !important;
-
-//   padding-top: 20px;
-//   padding-bottom: 20px;
-//   color: #fff;
-//   text-align: left !important;
-// }
-
-// .carousel-caption p {
-//   color: var(--2-f-4858, #2f4858);
-//   font-size: 38px;
-//   font-style: normal;
-//   font-weight: 700;
-//   line-height: 57px;
-// }
-
-// .carousel-caption p span {
-//   color: var(--color-02, #3bb54a);
-// }
-
-// .carousel-caption button {
-//   width: 242px;
-//   height: 48px;
-//   flex-shrink: 0;
-//   border-radius: 36px;
-//   border: 0px;
-//   background: var(--color-02, #3bb54a);
-//   color: #fff;
-//   font-size: 20px;
-//   font-style: normal;
-//   font-weight: 600;
-//   line-height: 30px;
-// }
 
 //CSS Swipped image
 #swiperImages {
@@ -881,6 +819,84 @@ img:not(.ImageFooter, .imagePresent) {
   text-align: center;
 }
 
+//new
+#swiper-slide-vsalon > div {
+  justify-content: center;
+  background-color: rgb(250, 250, 250);
+}
+#swiper-slide-vsalon > div {
+  padding-top: 3rem;
+  // padding-left: 5rem;
+  // padding-right: 5rem;
+}
+#swiper-slide-vsalon > div > div {
+  width: 70%;
+  // padding-left: 5rem;
+  // padding-right: 5rem;
+}
+#swiper-slide-vsalon > div > div > div.row.justify-content-center > div > div {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+div.swiper-slide.mb-5.h-auto > div.card.h-100 {
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgb(139, 139, 139);
+}
+div.swiper-button-next.slider-arrow {
+  width: 2rem;
+  height: 2rem;
+  background: #e1f3e3;
+  border: 1px solid #3bb54a !important;
+  border-radius: 30px;
+}
+div.swiper-button-prev.slider-arrow {
+  width: 2rem;
+  height: 2rem;
+  background: #e1f3e3;
+  border: 1px solid #3bb54a !important;
+  border-radius: 30px;
+}
+.text-intro-benefit {
+  color: #3b3b3b;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+.text-slogan {
+  color: #3b3b3b;
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+div.swiper-button-prev.slider-arrow::after {
+  color: #3bb54a;
+  font-size: 1rem;
+}
+div.swiper-button-next.slider-arrow::after {
+  color: #3bb54a;
+  font-size: 1rem;
+}
+.card-title {
+  color: #3bb54a;
+  font-weight: 600;
+}
+.card-text {
+  color: #3b3b3b !important;
+}
+// .animate {
+//   opacity: 0;
+//   filter: blur(5px);
+//   transition: 1s;
+// }
+#swiper-slide-vsalon > div > .animate {
+  filter: blur(0);
+  transform: scale(0.7);
+}
+#swiper-slide-vsalon.show-animate > div > div {
+  transform: scale(1);
+  opacity: 1;
+}
 // Natural function
 .function-title {
   display: none;

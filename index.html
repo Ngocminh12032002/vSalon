@@ -31,6 +31,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
 </head>
 
 <body>
@@ -62,15 +64,14 @@
             <li class="nav-item">
               <a class="nav-link active" href="#">Phản hồi</a>
             </li>
-            <li class="nav-item navbar-flag">
+            <li class="nav-item d-flex align-items-center ">
               <img src="./assets/img/vietnam-flag.svg" alt="Home icon" class="flag" alt="Flag" class="flag" />
               <a class="nav-link active" href="#">VI</a>
-              <!-- <div class="arrow-icon"></div> -->
-              <img src="./assets/img/arrow-icon.svg" alt="Home icon" class="flag" alt="Flag" class="flag" />
+              <div class="arrow-icon"></div>
             </li>
           </ul>
-          <button type="button" class="btn btn-navbar-register">Đăng ký</button>
-          <button type="button" class="btn btn-navbar-login">Đăng nhập</button>
+          <button type="button" class="btn btn-register">Đăng ký</button>
+          <button type="button" class="btn btn-login">Đăng nhập</button>
         </div>
       </div>
     </nav>
@@ -79,21 +80,21 @@
   <div id="demo" class="carousel slide" data-bs-ride="carousel">
     <!-- The slideshow/carousel -->
     <div class="carousel-inner">
-      <div class="carousel-item active imgBackground">
-        <div class="carousel-caption">
+      <div class="carousel-item active imgBackground" style="background-image: url('./assets/img/slide1.svg');">
+        <div class="carousel-caption col-md-6">
           <p>Giải pháp điện toán đám mây <span>quản lý Salon</span> hiệu quả nhất</p>
           <button>Dùng thử miễn phí</button>
         </div>
       </div>
-      <div class="carousel-item imgBackground">
-        <div class="carousel-caption d-none- d-md-block">
-          <p>Giải pháp điện toán đám mây <span>quản lý Salon</span> hiệu quả nhất</p>
+      <div class="carousel-item imgBackground" style="background-image: url('./assets/img/slide2.svg');">
+        <div class="carousel-caption d-none- d-md-block col-md-6">
+          <p>Tương tác thường xuyên với <span>Khách hàng</span> thân thiết</p>
           <button>Dùng thử miễn phí</button>
         </div>
       </div>
-      <div class="carousel-item imgBackground">
-        <div class="carousel-caption d-none- d-md-block">
-          <p>Giải pháp điện toán đám mây <span>quản lý Salon</span> hiệu quả nhất</p>
+      <div class="carousel-item imgBackground" style="background-image: url('./assets/img/slide3.svg');">
+        <div class="carousel-caption d-none- d-md-block col-md-6">
+          <p>Gắn kết khích lệ nhân viên <span>qua ứng dụng di động</span></p>
           <button>Dùng thử miễn phí</button>
         </div>
       </div>
@@ -101,7 +102,66 @@
   </div>
 
   <!-- Swippe image  -->
-  <div class="container-fluid" id="swiperImages">
+  <section id="swiper-slide-vsalon" class="benefit-section">
+    <div class="container-fluid swiper-container">
+      <div class="container animate">
+        <div class="text-intro-benefit justify-content-center">Lợi ích khi sử dụng <span
+            style="color: #3BB54A;">vSalon</span></div>
+        <div class="text-slogan justify-content-center">Hãy để chúng tôi đồng hành cùng thành công của bạn</div>
+        <div class="row justify-content-center">
+          <div class="col-sm-12 justify-content-center">
+            <div class="swiper myClients animate__animated animate__pulse mySwiper">
+              <div class="swiper-wrapper h-auto">
+                <div class="swiper-slide mb-5 h-auto">
+                  <div class="card h-100">
+                    <img src="./assets/img/ganketKH.svg" class="card-img-top" alt="image" class="swiper-lazy">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Gắn kết khách hàng</h5>
+                      <p class="card-text">
+                        Đem đến sự chuyên nghiệp và trải nghiệm dịch vụ tốt nhất
+                        cho khách hàng.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide mb-5 h-auto">
+                  <div class="card h-100">
+                    <img src="./assets/img/dieuphoilichhen.svg" class="card-img-top" alt="image" class="swiper-lazy">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Điều phối lịch hẹn</h5>
+                      <p class="card-text">
+                        Không còn lo lắng khi quên lịch hẹn với khách hàng.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide mb-5 h-auto">
+                  <div class="card h-100">
+                    <img src="./assets/img/quanlyhieuqua.svg" class="card-img-top" alt="image" class="swiper-lazy">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Quản lý hiệu quả</h5>
+                      <p class="card-text">
+                        Giúp nhân viên tăng năng suất làm việc.
+                        Quản lý hiệu quả từ xa
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev slider-arrow">
+                <ion-icon name="arrow-back-outline"></ion-icon>
+              </div>
+              <div class="swiper-button-next slider-arrow">
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- <div class="container-fluid" id="swiperImages">
     <h3 class="d-flex justify-content-center">
       Lợi ích khi sử dụng<span class="span">vSalon</span>
     </h3>
@@ -143,7 +203,7 @@
         <span class="pagination-bullet"></span>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <!-- Natural function  -->
   <div class="container-fluid" id="vSalonFunction">
