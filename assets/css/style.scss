@@ -128,8 +128,6 @@
     transform: none !important;
   }
 
-
-
   //CSS hệ sinh thái
   #vSalonFunction p {
     display: block !important;
@@ -424,11 +422,6 @@
     margin-left: 117% !important;
   }
   //CSS thanks customer
-  .customerService {
-    // position: relative;
-    // height: 75% !important;
-  }
-
   .customerService .paraph p {
     color: var(--Color-02, #3bb54a);
     text-align: center;
@@ -494,7 +487,6 @@
 }
 
 @media (min-width: 576px) and (max-width: 1668px) {
-
   .navbar-toggler {
     display: block !important;
   }
