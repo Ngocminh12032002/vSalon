@@ -1,4 +1,4 @@
-@media (min-width: 375px) and (max-width: 575px) {
+@media (max-width: 575px) {
   //CSS navbar
   .homeImg {
     width: 50% !important;
@@ -36,7 +36,7 @@
   }
 
   #demo .carousel-inner .carousel-item .carousel-caption {
-    width: 85%;
+    max-width: 85%;
     left: 13px !important;
     top: 11px !important;
   }
@@ -119,13 +119,6 @@
 
   .swiper-slide-active {
     z-index: 2;
-  }
-
-  .swiper-slide-next {
-    display: none !important;
-  }
-  .custom-carousel-item {
-    transform: none !important;
   }
 
   //CSS hệ sinh thái
@@ -411,22 +404,14 @@
   }
 
   .cmtSwiper {
-    width: 100% !important;
+    max-width: 100% !important;
   }
 
   .cmtSlide {
-    width: 100% !important;
+    max-width: 100px;
   }
 
-  .commentCustomer .swiper-wrapper .swiper-slide:nth-child(1) {
-    margin-left: 117% !important;
-  }
   //CSS thanks customer
-  .customerService {
-    // position: relative;
-    // height: 75% !important;
-  }
-
   .customerService .paraph p {
     color: var(--Color-02, #3bb54a);
     text-align: center;
@@ -663,8 +648,8 @@ img:not(.ImageFooter, .imagePresent) {
 .carousel-caption {
   position: relative !important;
   margin-top: 140px;
-  margin-left: 60px;
-  margin-right: 80px;
+  margin-right: auto;
+  // margin-right: 80px;
 }
 
 .carousel-caption p {
@@ -735,7 +720,7 @@ img:not(.ImageFooter, .imagePresent) {
 }
 
 .mySwiper {
-  width: 65%;
+  max-width: 1200px;
   height: 100%;
 }
 
@@ -743,7 +728,7 @@ img:not(.ImageFooter, .imagePresent) {
   justify-content: center;
 }
 .mySwiperSlide {
-  width: 320px !important;
+  max-width: 320px !important;
   height: 400px !important;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -761,7 +746,7 @@ img:not(.ImageFooter, .imagePresent) {
 .swiper-slide .swiperImage {
   margin-top: 78px;
   object-fit: cover;
-  width: 138.622px;
+  max-width: 138.622px;
   height: 138.621px;
 }
 
@@ -819,84 +804,6 @@ img:not(.ImageFooter, .imagePresent) {
   text-align: center;
 }
 
-//new
-#swiper-slide-vsalon > div {
-  justify-content: center;
-  background-color: rgb(250, 250, 250);
-}
-#swiper-slide-vsalon > div {
-  padding-top: 3rem;
-  // padding-left: 5rem;
-  // padding-right: 5rem;
-}
-#swiper-slide-vsalon > div > div {
-  width: 70%;
-  // padding-left: 5rem;
-  // padding-right: 5rem;
-}
-#swiper-slide-vsalon > div > div > div.row.justify-content-center > div > div {
-  padding-left: 3rem;
-  padding-right: 3rem;
-}
-
-div.swiper-slide.mb-5.h-auto > div.card.h-100 {
-  border-radius: 10px;
-  box-shadow: 0 0 5px rgb(139, 139, 139);
-}
-div.swiper-button-next.slider-arrow {
-  width: 2rem;
-  height: 2rem;
-  background: #e1f3e3;
-  border: 1px solid #3bb54a !important;
-  border-radius: 30px;
-}
-div.swiper-button-prev.slider-arrow {
-  width: 2rem;
-  height: 2rem;
-  background: #e1f3e3;
-  border: 1px solid #3bb54a !important;
-  border-radius: 30px;
-}
-.text-intro-benefit {
-  color: #3b3b3b;
-  text-align: center;
-  font-size: 2rem;
-  font-weight: bolder;
-}
-.text-slogan {
-  color: #3b3b3b;
-  text-align: center;
-  font-size: 1rem;
-  margin-bottom: 1rem;
-}
-div.swiper-button-prev.slider-arrow::after {
-  color: #3bb54a;
-  font-size: 1rem;
-}
-div.swiper-button-next.slider-arrow::after {
-  color: #3bb54a;
-  font-size: 1rem;
-}
-.card-title {
-  color: #3bb54a;
-  font-weight: 600;
-}
-.card-text {
-  color: #3b3b3b !important;
-}
-// .animate {
-//   opacity: 0;
-//   filter: blur(5px);
-//   transition: 1s;
-// }
-#swiper-slide-vsalon > div > .animate {
-  filter: blur(0);
-  transform: scale(0.7);
-}
-#swiper-slide-vsalon.show-animate > div > div {
-  transform: scale(1);
-  opacity: 1;
-}
 // Natural function
 .function-title {
   display: none;
@@ -904,9 +811,10 @@ div.swiper-button-next.slider-arrow::after {
 
 .function-nav {
   margin: 60px auto;
-  width: 80% !important;
+  // width: 80% !important;
   display: block;
   text-align: center;
+  max-width: 1200px;
 }
 
 #nav-tab {
@@ -930,7 +838,7 @@ div.swiper-button-next.slider-arrow::after {
   height: 39.5px;
   border-right: 2px solid #e0e0e0;
   margin-left: 4.5%;
-  // margin-top: 1%;
+  margin-top: 2.5%;
   stroke-width: 1px;
   stroke: var(--Gray-5, #e0e0e0);
 }
@@ -1115,7 +1023,7 @@ figcaption {
 }
 
 hr {
-  width: 284px;
+  max-width: 284px;
   height: 0px;
   flex-shrink: 0;
   stroke-width: 1px;
@@ -1125,18 +1033,24 @@ hr {
 }
 
 .buttonTry {
-  width: 215px;
+  max-width: 600px;
   height: 48px;
   flex-shrink: 0;
   border-radius: 36px;
-  background: var(#3bb54a);
+  // background: var(--Color-02, #3bb54a);
+
+  background: var(
+    --main-color-1,
+    linear-gradient(90deg, #3bb54a 0%, #7ec341 100%)
+  );
+
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
   display: flex !important;
   text-align: center;
 
-  color: #fff;
+  color: #fff !important;
   font-size: 20px !important;
   font-style: normal;
   font-weight: 600 !important;
@@ -1314,7 +1228,7 @@ hr {
 }
 
 .cmtSlide {
-  width: 25%;
+  max-width: 360px;
   border-radius: 10px;
   background: #fff;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -1324,7 +1238,7 @@ hr {
 
 .cmtSlide .avatar {
   border-radius: 50%;
-  width: 162.897px;
+  max-width: 80%;
   height: 162.897px;
   flex-shrink: 0;
   margin-top: 39px;
@@ -1352,7 +1266,7 @@ hr {
 }
 
 .space {
-  width: 274.5px;
+  max-width: 80%;
   height: 0px;
   flex-shrink: 0;
   stroke-width: 1px;
@@ -1363,7 +1277,7 @@ hr {
 }
 
 .talk {
-  width: 29px;
+  max-width: 29px;
   height: 25px;
   flex-shrink: 0;
   fill: #e9e9e9;
@@ -1373,6 +1287,7 @@ hr {
 
 .cmtDetail {
   margin: 30px 30px 75px 30px;
+  max-width: 355px;
 }
 
 .swiper-pagination {
@@ -1386,30 +1301,22 @@ hr {
 .customerService {
   background-image: url("../img/customerUseSalon.svg");
   background-size: cover;
-  padding: 36.157px 83px 0px 0px;
+  background-position: center;
+  // padding: 36.157px 83px 0px 0px;
   align-items: center;
-  height: 45%;
-  padding-bottom: 20%;
+  height: auto;
+  // height: 50%;
+  // padding-bottom: 20%;
 }
+
 .customerService .paraph {
-  margin-top: 14%;
+  // margin-top: 14%;
+  padding-top: 226px;
   display: block;
   align-items: center;
 }
 
-.customerService .paraph1 {
-  color: var(--color-02, #3bb54a);
-  text-align: center;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 36px; /* 150% */
-  text-transform: uppercase;
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
+.customerService .paraph1,
 .customerService .paraph2 {
   color: var(--color-02, #3bb54a);
   text-align: center;
@@ -1418,10 +1325,17 @@ hr {
   font-weight: 700;
   line-height: 36px; /* 150% */
   text-transform: uppercase;
-  width: 80%;
-  justify-content: center;
   margin-left: auto;
   margin-right: auto;
+}
+
+.customerService .paraph1 {
+  max-width: 500px;
+}
+
+.customerService .paraph2 {
+  max-width: 1200px;
+  justify-content: center;
 }
 
 .customerService .customerServiceImage {
@@ -1462,9 +1376,8 @@ hr {
 }
 
 .formRegister-div {
-  width: 40% !important;
+  max-width: 710px !important;
   display: flex;
-  width: 705px;
   padding: 4px 4px 4px 24px;
   align-items: center;
   gap: 16px;
@@ -1483,7 +1396,7 @@ hr {
 }
 
 .inputForm {
-  width: 65%;
+  max-width: 600px;
   border: none !important;
   color: var(--8-ba-0-a-8, #8ba0a8);
   font-size: 16px;
@@ -1511,7 +1424,8 @@ hr {
 
 // CSS present
 .presentFooter {
-  background: #2f4858;
+  background-image: url("../img/footer.svg");
+  background-size: cover;
 }
 
 .presentFooter-detail {
@@ -1532,7 +1446,7 @@ hr {
 }
 
 .imagePresent {
-  width: 199px;
+  max-width: 199px;
   height: 79px;
   flex-shrink: 0;
   justify-content: left;
@@ -1549,7 +1463,7 @@ hr {
 }
 
 .spacePresent {
-  width: 36px;
+  max-width: 36px;
   height: 3px;
   background-color: #3bb54a;
   border-radius: 7px;
