@@ -226,9 +226,6 @@
   .structureCheck {
     order: 1;
   }
-  #tryit {
-    width: 50% !important;
-  }
   .appManage {
     margin: -10%;
   }
@@ -432,9 +429,6 @@
     width: 100%;
     height: fit-content;
   }
-  #tryit {
-    width: 40% !important;
-  }
 }
 html,
 body {
@@ -498,7 +492,7 @@ img:not(.ImageFooter, .imagePresent) {
   transform: rotate(45deg);
 }
 
-.btn-register {
+.btn-navbar-register {
   color: #fff !important; /* Màu chữ mặc định */
   border-radius: 22px !important;
   background: var(--main-color-1, linear-gradient(90deg, #3bb54a 0%, #7ec341 100%));
@@ -586,6 +580,7 @@ img:not(.ImageFooter, .imagePresent) {
   border: none;
   justify-content: left;
   display: block;
+  padding: 0 32px;
 }
 
 #swiperImages {
@@ -673,7 +668,7 @@ img:not(.ImageFooter, .imagePresent) {
   border: 1px solid rgb(59, 181, 74);
   border-radius: 50%;
   background-color: #e1f3e3;
-  width: 45px !important;
+  max-width: 45px !important;
   height: 45px !important;
   justify-content: center;
 }
@@ -682,7 +677,7 @@ img:not(.ImageFooter, .imagePresent) {
   border: 1px solid rgb(59, 181, 74);
   border-radius: 50%;
   background-color: #e1f3e3;
-  width: 45px !important;
+  max-width: 45px !important;
   height: 45px !important;
   justify-content: center;
 }
@@ -691,7 +686,7 @@ img:not(.ImageFooter, .imagePresent) {
   font-size: 26px !important;
   color: rgb(59, 181, 74) !important;
   text-align: center;
-  width: 26.4px !important;
+  max-width: 26.4px !important;
   height: 26.4px !important;
   flex-shrink: 0;
   fill: #e1f3e3;
@@ -728,7 +723,7 @@ img:not(.ImageFooter, .imagePresent) {
   align-items: center;
   justify-content: center;
   text-align: center;
-  width: 10%;
+  max-width: 142px;
 }
 
 .function-nav figure span {
@@ -949,7 +944,10 @@ hr {
 
 .trySoft {
   background-image: url("../img/background.svg");
-  width: 80%;
+  max-width: 1920px;
+  height: auto;
+  background-size: cover;
+  background-position: center;
 }
 
 .trySoft h2 {
@@ -962,7 +960,7 @@ hr {
   font-weight: 700 !important;
   line-height: 42px !important; /* 150% */
   padding-top: 39px;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -972,13 +970,13 @@ hr {
   margin-left: auto;
   margin-right: auto;
   margin-top: 40px;
-  padding-bottom: 40px;
-  width: 215px;
-  height: 48px;
+  max-height: 100px;
   flex-shrink: 0;
   border-radius: 36px;
   border: 2px solid #fff;
-  background: var(#3bb54a);
+  background: var(--Color-02, #3bb54a);
+  max-width: 221px;
+  padding: 9px 40px;
   color: #fff;
   font-size: 20px;
   font-style: normal;
