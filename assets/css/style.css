@@ -1,17 +1,14 @@
 @charset "UTF-8";
 @media (max-width: 575px) {
   .homeImg {
-    width: 50% !important;
+    max-width: 150px !important;
   }
   .nav-header {
     position: relative;
-    margin: 0 !important;
-    padding: 0 !important;
-    width: 100% !important;
     z-index: 1;
   }
   .nav-header-logo img {
-    width: 50%;
+    max-width: 127px;
   }
   .navbar-toggler {
     display: block;
@@ -388,6 +385,13 @@
   }
 }
 @media (min-width: 576px) and (max-width: 1668px) {
+  .nav-header-link {
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    align-items: flex-end;
+  }
   .navbar-toggler {
     display: block !important;
   }
@@ -450,7 +454,7 @@ img:not(.ImageFooter, .imagePresent) {
 .nav-header {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -498,7 +502,7 @@ img:not(.ImageFooter, .imagePresent) {
   color: #fff !important; /* Màu chữ mặc định */
   border-radius: 22px !important;
   background: var(--main-color-1, linear-gradient(90deg, #3bb54a 0%, #7ec341 100%));
-  width: 115px;
+  max-width: 215px;
   height: 38px;
   flex-shrink: 0;
   font-size: 16px;
@@ -519,6 +523,15 @@ img:not(.ImageFooter, .imagePresent) {
   font-style: normal;
   font-weight: 600;
   line-height: 30px; /* 187.5% */
+}
+
+.nav-header-logo {
+  flex: 0 0 auto; /* Không co giãn */
+  max-width: 150px;
+}
+
+.nav-header-link {
+  flex: 1 1 auto; /* Co giãn */
 }
 
 #demo {
@@ -908,7 +921,7 @@ hr {
 
 .buttonTry {
   max-width: 600px;
-  height: 48px;
+  max-height: 100px;
   flex-shrink: 0;
   border-radius: 36px;
   background: var(--main-color-1, linear-gradient(90deg, #3bb54a 0%, #7ec341 100%));
@@ -940,6 +953,7 @@ hr {
 }
 
 .trySoft h2 {
+  max-width: 920px;
   text-align: center;
   color: #fff !important;
   text-align: center;
@@ -949,6 +963,8 @@ hr {
   line-height: 42px !important; /* 150% */
   padding-top: 39px;
   padding-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .trySoft button {
@@ -1021,6 +1037,7 @@ hr {
 .appIcon img {
   width: 20%;
   margin-right: 16px;
+  margin-bottom: 45px;
 }
 
 .appText {
@@ -1301,7 +1318,6 @@ hr {
 
 .imagePresent {
   max-width: 199px;
-  height: 79px;
   flex-shrink: 0;
   justify-content: left;
   margin-top: 30px;
