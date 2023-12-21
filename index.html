@@ -70,8 +70,10 @@
               <div class="arrow-icon"></div>
             </li>
           </ul>
-          <button type="button" class="btn btn-navbar-register">Đăng ký</button>
-          <button type="button" class="btn btn-login">Đăng nhập</button>
+          <div class="wrapper-button">
+            <button type="button" class="btn btn-navbar-register">Đăng ký</button>
+            <button type="button" class="btn btn-login">Đăng nhập</button>
+          </div>
         </div>
       </div>
     </nav>
@@ -81,12 +83,16 @@
     <!-- The slideshow/carousel -->
     <div class="carousel-inner">
       <div class="carousel-item active imgBackground" style="background-image: url('./assets/img/slide1.svg');">
-        <div class="carousel-caption col-md-6">
-          <p>Giải pháp điện toán đám mây <span>quản lý Salon</span> hiệu quả nhất</p>
-          <button>Dùng thử miễn phí</button>
+        <div class="row slideImg">
+          <div class="carousel-caption col-md-6">
+            <p>Giải pháp điện toán đám mây <span>quản lý Salon</span> hiệu quả nhất</p>
+            <button>Dùng thử miễn phí</button>
+          </div>
+          <div class="col-md-6">
+          </div>
         </div>
       </div>
-      <div class="carousel-item imgBackground" style="background-image: url('./assets/img/slide2.svg');">
+      <!-- <div class="carousel-item imgBackground" style="background-image: url('./assets/img/slide2.svg');">
         <div class="carousel-caption d-none- d-md-block col-md-6">
           <p>Tương tác thường xuyên với <span>Khách hàng</span> thân thiết</p>
           <button>Dùng thử miễn phí</button>
@@ -97,7 +103,7 @@
           <p>Gắn kết khích lệ nhân viên <span>qua ứng dụng di động</span></p>
           <button>Dùng thử miễn phí</button>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 
@@ -116,14 +122,16 @@
           <div class="text-center custom-carousel-item">
             <img src="./assets/img/dieuphoilichhen.svg" alt="Điều phối lịch hẹn" class="d-block mx-auto swiperImage" />
             <p class="swiper-slide-title">Điều phối lịch hẹn</p>
-            <p class="swiper-slide-description">Không còn lo lắng khi quên lịch hẹn với khách hàng.</p>
+            <p class="swiper-slide-description">Không còn lo lắng khi quên lịch hẹn với khách hàng.
+            </p>
           </div>
         </div>
         <div class="swiper-slide mySwiperSlide" style="z-index: 1;">
           <div class="text-center custom-carousel-item">
             <img src="./assets/img/quanlyhieuqua.svg" alt="Quản lý hiệu quả" class="d-block mx-auto swiperImage" />
             <p class="swiper-slide-title">Quản lý hiệu quả</p>
-            <p class="swiper-slide-description">Giúp nhân viên tăng năng suất làm việc. Quản lý hiệu quả từ
+            <p class="swiper-slide-description">Giúp nhân viên tăng năng suất làm việc. Quản lý hiệu
+              quả từ
               xa.</p>
           </div>
         </div>
@@ -131,7 +139,8 @@
           <div class="text-center custom-carousel-item">
             <img src="./assets/img/ganketKH.svg" alt="Gắn kết khách hàng" class="d-block mx-auto swiperImage" />
             <p class="swiper-slide-title">Gắn kết khách hàng</p>
-            <p class="swiper-slide-description">Đem đến sự chuyên nghiệp và trải nghiệm dịch vụ tốt nhất
+            <p class="swiper-slide-description">Đem đến sự chuyên nghiệp và trải nghiệm dịch vụ tốt
+              nhất
               cho khách.</p>
           </div>
         </div>
@@ -153,20 +162,20 @@
     </p>
     <nav class="function-nav">
       <div class="nav" id="nav-tab" role="tablist">
-        <figure class="figure align-items-center justify-content-center figure-object figure-caption"
+        <div class="figure align-items-center justify-content-center figure-object figure-caption"
           data-bs-toggle="collapse" data-bs-target="#navbarDetailSalon" id="figureElement">
           <span></span></i>
           <div class="function-image">
             <img src="./assets/img/qlysalon.svg" alt="" class="text-center">
           </div>
-          <figcaption class="figure-caption figure-font" data-bs-toggle="collapse" data-bs-target="#navbarDetailSalon">
-            Quản lý chuỗi salon</figcaption>
+          <div class="figure-caption figure-font" data-bs-toggle="collapse" data-bs-target="#navbarDetailSalon">
+            Quản lý chuỗi salon</div>
           <div class="function-narrow figure-font">
             <i class="fa-solid fa-chevron-down"></i>
           </div>
           <div class="function-space">
           </div>
-        </figure>
+        </div>
         <div class="collapse functionDetailIphone" id="navbarDetailSalon">
           <div class="container d-flex justify-content-center navTabDetail">
             <div class="row">
@@ -176,11 +185,13 @@
               <div class="col-lg-6">
                 <div class="navTabDetailDescription">
                   <h6>Tổng hợp dữ liệu nhanh chóng</h6>
-                  <p>Báo cáo thông tin lịch hẹn, doanh thu... chi tiết đến từng salon trong chuỗi. Báo cáo tổng hợp cho
+                  <p>Báo cáo thông tin lịch hẹn, doanh thu... chi tiết đến từng salon trong chuỗi.
+                    Báo cáo tổng hợp cho
                     số
                     liệu
                     tổng
-                    quan tình hình kinh doanh của toàn bộ salon. Dễ dàng so sánh, đánh giá hiệu quả hoạt động của từng
+                    quan tình hình kinh doanh của toàn bộ salon. Dễ dàng so sánh, đánh giá hiệu quả
+                    hoạt động của từng
                     cửa
                     hàng.
                   </p>
@@ -189,21 +200,21 @@
             </div>
           </div>
         </div>
-        <figure class="figure align-items-center justify-content-center figure-object figure-caption"
+        <div class="figure align-items-center justify-content-center figure-object figure-caption"
           data-bs-toggle="collapse" data-bs-target="#navbarDetailSchedule">
           <span></span></i>
           <div class="function-image">
             <img src="./assets/img/qlylichhen.svg" alt="" class="text-center">
           </div>
-          <figcaption class="figure-caption figure-font" data-bs-toggle="collapse"
-            data-bs-target="#navbarDetailSchedule">Quản lý
-            lịch hẹn</figcaption>
+          <div class="figure-caption figure-font" data-bs-toggle="collapse" data-bs-target="#navbarDetailSchedule">Quản
+            lý
+            lịch hẹn</div>
           <div class="function-narrow figure-font">
             <i class="fa-solid fa-chevron-down"></i>
           </div>
           <div class="function-space">
           </div>
-        </figure>
+        </div>
         <div class="collapse functionDetailIphone" id="navbarDetailSchedule">
           <div class="container d-flex justify-content-center navTabDetail">
             <div class="row">
@@ -213,7 +224,8 @@
               <div class="col-md-6">
                 <div class="navTabDetailDescription">
                   <h6>Quản lý lịch hẹn</h6>
-                  <p>Quản lý lịch hẹn giúp cho salon sắp xếp công việc một cách hiệu quả. Tăng năng suất làm việc của
+                  <p>Quản lý lịch hẹn giúp cho salon sắp xếp công việc một cách hiệu quả. Tăng năng
+                    suất làm việc của
                     nhân
                     viên, tăng trải nghiệm của khách hàng.
                   </p>
@@ -222,19 +234,19 @@
             </div>
           </div>
         </div>
-        <figure class="figure align-items-center justify-content-center figure-object figure-caption"
+        <div class="figure align-items-center justify-content-center figure-object figure-caption"
           data-bs-toggle="collapse" data-bs-target="#navbarDetailHumanResource">
           <span></span></i>
           <div class="function-image">
             <img src="./assets/img/qlythanhvien.svg" alt="" class="text-center">
           </div>
-          <figcaption class="figure-caption figure-font">Quản lý thành viên</figcaption>
+          <div class="figure-caption figure-font">Quản lý thành viên</div>
           <div class="function-narrow figure-font">
             <i class="fa-solid fa-chevron-down"></i>
           </div>
           <div class="function-space">
           </div>
-        </figure>
+        </div>
         <div class="collapse functionDetailIphone" id="navbarDetailHumanResource">
           <div class="container d-flex justify-content-center navTabDetail">
             <div class="row">
@@ -244,7 +256,8 @@
               <div class="col-md-6">
                 <div class="navTabDetailDescription">
                   <h6>Duy trì dữ chân khách hàng</h6>
-                  <p>Với thẻ thành viên, salon sẽ nhận diện được khách hàng thân thiết, từ đó phục vụ khách hàng tốt hơn
+                  <p>Với thẻ thành viên, salon sẽ nhận diện được khách hàng thân thiết, từ đó phục
+                    vụ khách hàng tốt hơn
                     để
                     giữ chân khách hàng
                   </p>
@@ -253,19 +266,19 @@
             </div>
           </div>
         </div>
-        <figure class="figure align-items-center justify-content-center figure-object figure-caption"
+        <div class="figure align-items-center justify-content-center figure-object figure-caption"
           data-bs-toggle="collapse" data-bs-target="#navbarDetailBuy">
           <span></span></i>
           <div class="function-image">
             <img src="./assets/img/banhang.svg" alt="" class="text-center">
           </div>
-          <figcaption class="figure-caption figure-font">Bán hàng</figcaption>
+          <div class="figure-caption figure-font">Bán hàng</div>
           <div class="function-narrow figure-font">
             <i class="fa-solid fa-chevron-down"></i>
           </div>
           <div class="function-space">
           </div>
-        </figure>
+        </div>
         <div class="collapse functionDetailIphone" id="navbarDetailBuy">
           <div class="container d-flex justify-content-center navTabDetail">
             <div class="row">
@@ -276,10 +289,13 @@
             <div class="col-md-6">
               <div class="navTabDetailDescription">
                 <h6>Tạo khuyến mại thành công</h6>
-                <p>Chỉ mất vài phút, bạn đã có thể tạo và áp dụng khuyến mãi cho từng mặt hàng hay nhóm hàng, giá trị
+                <p>Chỉ mất vài phút, bạn đã có thể tạo và áp dụng khuyến mãi cho từng mặt hàng hay
+                  nhóm hàng, giá trị
                   khuyến
-                  mãi linh hoạt theo đơn vị tính (chiếc, bộ, ...) số tiền cụ thể (vnd) hoặc % (giá trị đơn hàng, giá trị
-                  hàng tặng, điểm tích luỹ...). Tất cả các thông tin về khuyến mãi và giá trị khuyến mãi đều được thể
+                  mãi linh hoạt theo đơn vị tính (chiếc, bộ, ...) số tiền cụ thể (vnd) hoặc % (giá
+                  trị đơn hàng, giá trị
+                  hàng tặng, điểm tích luỹ...). Tất cả các thông tin về khuyến mãi và giá trị khuyến
+                  mãi đều được thể
                   hiện
                   rõ ràng hoá đơn.
                 </p>
@@ -287,19 +303,19 @@
             </div>
           </div>
         </div>
-        <figure class="figure align-items-center justify-content-center figure-object figure-caption"
+        <div class="figure align-items-center justify-content-center figure-object figure-caption"
           data-bs-toggle="collapse" data-bs-target="#navbarDetailStorage">
           <span></span></i>
           <div class="function-image">
             <img src="./assets/img/qlykho.svg" alt="" class="text-center">
           </div>
-          <figcaption class="figure-caption figure-font">Quản lý kho</figcaption>
+          <div class="figure-caption figure-font">Quản lý kho</div>
           <div class="function-narrow figure-font">
             <i class="fa-solid fa-chevron-down"></i>
           </div>
           <div class="function-space">
           </div>
-        </figure>
+        </div>
         <div class="collapse functionDetailIphone" id="navbarDetailStorage">
           <div class="container d-flex justify-content-center navTabDetail">
             <div class="row">
@@ -309,13 +325,16 @@
               <div class="col-md-6">
                 <div class="navTabDetailDescription">
                   <h6>Nắm bắt hàng tồn kho, bổ sung hàng hoá kịp thời</h6>
-                  <p>vSalon giúp bạn quản lý kho chính xác tới từng mặt hàng cụ thể và chi tiết trong từng chi nhánh,
+                  <p>vSalon giúp bạn quản lý kho chính xác tới từng mặt hàng cụ thể và chi tiết
+                    trong từng chi nhánh,
                     gạt
                     đi
-                    nỗi lo muôn thuở về những sản phẩm chồng chất mà không soát nổi một con số như tình trạng của các
+                    nỗi lo muôn thuở về những sản phẩm chồng chất mà không soát nổi một con số như
+                    tình trạng của các
                     cửa
                     hàng
-                    gặp phải. Theo đó, bạn sẽ nắm được mặt hàng nào đang bán chạy, số lượng tồn kho để đi nhập hàng kế
+                    gặp phải. Theo đó, bạn sẽ nắm được mặt hàng nào đang bán chạy, số lượng tồn kho
+                    để đi nhập hàng kế
                     tiếp.
                   </p>
                 </div>
@@ -323,19 +342,19 @@
             </div>
           </div>
         </div>
-        <figure class="figure align-items-center justify-content-center figure-object figure-caption"
+        <div class="figure align-items-center justify-content-center figure-object figure-caption"
           data-bs-toggle="collapse" data-bs-target="#navbarDetailPerson">
           <span></span></i>
           <div class="function-image">
             <img src="./assets/img/qlynvien.svg" alt="" class="text-center">
           </div>
-          <figcaption class="figure-caption figure-font">Quản lý nhân viên</figcaption>
+          <div class="figure-caption figure-font">Quản lý nhân viên</div>
           <div class="function-narrow figure-font">
             <i class="fa-solid fa-chevron-down"></i>
           </div>
           <div class="function-space">
           </div>
-        </figure>
+        </div>
         <div class="collapse functionDetailIphone" id="navbarDetailPerson">
           <div class="container d-flex justify-content-center navTabDetail">
             <div class="row">
@@ -355,18 +374,18 @@
             </div>
           </div>
         </div>
-        <figure class="figure align-items-center justify-content-center figure-object figure-caption"
+        <div class="figure align-items-center justify-content-center figure-object figure-caption"
           data-bs-toggle="collapse" data-bs-target="#navbarDetailReport">
           <div class="function-image">
             <img src="./assets/img/baocaothongke.svg" alt="" class="text-center">
           </div>
-          <figcaption class="figure-caption figure-font">Báo cáo thống kê</figcaption>
+          <div class="figure-caption figure-font">Báo cáo thống kê</div>
           <div class="function-narrow figure-font">
             <i class="fa-solid fa-chevron-down"></i>
           </div>
           <div class="function-space">
           </div>
-        </figure>
+        </div>
         <div class="collapse functionDetailIphone" id="navbarDetailReport">
           <div class="container d-flex justify-content-center navTabDetail">
             <div class="row">
@@ -376,7 +395,8 @@
               <div class="col-md-6">
                 <div class="navTabDetailDescription ">
                   <h6>Chúng tôi cung cấp những con số bạn cần</h6>
-                  <p>Bạn có muốn nắm được doanh thu bán hàng cụ thể đến từng ngày, lịch sử mua hàng, doanh số bán hàng
+                  <p>Bạn có muốn nắm được doanh thu bán hàng cụ thể đến từng ngày, lịch sử mua hàng,
+                    doanh số bán hàng
                     của
                     từng nhân viên hay công nợ từng chi nhánh
                   </p>
@@ -396,11 +416,13 @@
           <div class="col-lg-6">
             <div class="navTabDetailDescription">
               <h6>Tổng hợp dữ liệu nhanh chóng</h6>
-              <p>Báo cáo thông tin lịch hẹn, doanh thu... chi tiết đến từng salon trong chuỗi. Báo cáo tổng hợp cho
+              <p>Báo cáo thông tin lịch hẹn, doanh thu... chi tiết đến từng salon trong chuỗi. Báo
+                cáo tổng hợp cho
                 số
                 liệu
                 tổng
-                quan tình hình kinh doanh của toàn bộ salon. Dễ dàng so sánh, đánh giá hiệu quả hoạt động của từng
+                quan tình hình kinh doanh của toàn bộ salon. Dễ dàng so sánh, đánh giá hiệu quả hoạt
+                động của từng
                 cửa
                 hàng.
               </p>
@@ -419,7 +441,8 @@
           <div class="col-md-6">
             <div class="navTabDetailDescription">
               <h6>Quản lý lịch hẹn</h6>
-              <p>Quản lý lịch hẹn giúp cho salon sắp xếp công việc một cách hiệu quả. Tăng năng suất làm việc của
+              <p>Quản lý lịch hẹn giúp cho salon sắp xếp công việc một cách hiệu quả. Tăng năng suất
+                làm việc của
                 nhân
                 viên, tăng trải nghiệm của khách hàng.
               </p>
@@ -438,7 +461,8 @@
           <div class="col-md-6">
             <div class="navTabDetailDescription">
               <h6>Duy trì dữ chân khách hàng</h6>
-              <p>Với thẻ thành viên, salon sẽ nhận diện được khách hàng thân thiết, từ đó phục vụ khách hàng tốt hơn
+              <p>Với thẻ thành viên, salon sẽ nhận diện được khách hàng thân thiết, từ đó phục vụ
+                khách hàng tốt hơn
                 để
                 giữ chân khách hàng
               </p>
@@ -458,10 +482,13 @@
         <div class="col-md-6">
           <div class="navTabDetailDescription">
             <h6>Tạo khuyến mại thành công</h6>
-            <p>Chỉ mất vài phút, bạn đã có thể tạo và áp dụng khuyến mãi cho từng mặt hàng hay nhóm hàng, giá trị
+            <p>Chỉ mất vài phút, bạn đã có thể tạo và áp dụng khuyến mãi cho từng mặt hàng hay nhóm
+              hàng, giá trị
               khuyến
-              mãi linh hoạt theo đơn vị tính (chiếc, bộ, ...) số tiền cụ thể (vnd) hoặc % (giá trị đơn hàng, giá trị
-              hàng tặng, điểm tích luỹ...). Tất cả các thông tin về khuyến mãi và giá trị khuyến mãi đều được thể
+              mãi linh hoạt theo đơn vị tính (chiếc, bộ, ...) số tiền cụ thể (vnd) hoặc % (giá trị
+              đơn hàng, giá trị
+              hàng tặng, điểm tích luỹ...). Tất cả các thông tin về khuyến mãi và giá trị khuyến mãi
+              đều được thể
               hiện
               rõ ràng hoá đơn.
             </p>
@@ -479,13 +506,16 @@
           <div class="col-md-6">
             <div class="navTabDetailDescription">
               <h6>Nắm bắt hàng tồn kho, bổ sung hàng hoá kịp thời</h6>
-              <p>vSalon giúp bạn quản lý kho chính xác tới từng mặt hàng cụ thể và chi tiết trong từng chi nhánh,
+              <p>vSalon giúp bạn quản lý kho chính xác tới từng mặt hàng cụ thể và chi tiết trong
+                từng chi nhánh,
                 gạt
                 đi
-                nỗi lo muôn thuở về những sản phẩm chồng chất mà không soát nổi một con số như tình trạng của các
+                nỗi lo muôn thuở về những sản phẩm chồng chất mà không soát nổi một con số như tình
+                trạng của các
                 cửa
                 hàng
-                gặp phải. Theo đó, bạn sẽ nắm được mặt hàng nào đang bán chạy, số lượng tồn kho để đi nhập hàng kế
+                gặp phải. Theo đó, bạn sẽ nắm được mặt hàng nào đang bán chạy, số lượng tồn kho để
+                đi nhập hàng kế
                 tiếp.
               </p>
             </div>
@@ -523,7 +553,8 @@
           <div class="col-md-6">
             <div class="navTabDetailDescription ">
               <h6>Chúng tôi cung cấp những con số bạn cần</h6>
-              <p>Bạn có muốn nắm được doanh thu bán hàng cụ thể đến từng ngày, lịch sử mua hàng, doanh số bán hàng
+              <p>Bạn có muốn nắm được doanh thu bán hàng cụ thể đến từng ngày, lịch sử mua hàng,
+                doanh số bán hàng
                 của
                 từng nhân viên hay công nợ từng chi nhánh
               </p>
@@ -539,12 +570,14 @@
     <h3>
       Bảng giá phần mềm quản lý<span class="span"> Spa, salon và vSalon</span>
     </h3>
-    <p class="text-center priceDetail-text">Hãy lựa chọn gói giải pháp phù hợp với nhu cầu của bạn và dùng thử trong 30
+    <p class="text-center priceDetail-text">Hãy lựa chọn gói giải pháp phù hợp với nhu cầu của bạn
+      và dùng thử trong 30
       ngày</p>
     <div class="row justify-content-center priceDetailGeneral">
-      <div class="col-md-3 basicCheck card">
+      <div class="col-md-4 basicCheck card">
         <h3 class="text-center">Gói cơ bản</h3>
-        <p class="text-center priceDetail-for">Dành cho những cửa hàng nhỏ, mới bắt đầu kinh doanh</p>
+        <p class="text-center priceDetail-for">Dành cho những cửa hàng nhỏ, mới bắt đầu kinh doanh
+        </p>
         <h2 class="text-center priceDetail-price">139,000 vnd</h2>
         <div class="card-body">
           <div class="d-flex priceDetailDes">
@@ -568,7 +601,7 @@
             ngay</button>
         </div>
       </div>
-      <div class="col-md-3 structureCheck">
+      <div class="col-md-4 structureCheck">
         <img id="structure" src="./assets/img/Group 644.png" class="img-fluid img-thumbnail mb-4" alt="Image 1">
         <p class="card-text">
           Lưu ý : <span style="color: #EB5757;">Gói cơ bản</span> chỉ áp dụng cho 1 cửa hàng, để
@@ -576,7 +609,7 @@
           <span style="color: #EB5757;">nâng cao</span>.
         </p>
       </div>
-      <div class="col-md-3 advancedCheck card">
+      <div class="col-md-4 advancedCheck card">
         <h3 class="text-center">Gói nâng cao</h3>
         <p class="text-center priceDetail-for">Dành cho mô hình kinh doanh chuỗi</p>
         <h2 class="text-center priceDetail-price">289,000 vnd</h2>
@@ -671,8 +704,10 @@
             <hr class="space">
             <div class="cmtDetail">
               <img class="talk" src="./assets/img/talk.svg" alt="">
-              <p>Phần mềm e-spa hỗ trợ rất tốt trong các chiến dịch Marketing của chúng tôi đến với khách hàng, nhất là
-                các dịp lễ trong năm, không còn phải tốn nhiều chi phí marketing đắt đỏ, nhưng thông điệp của chúng tôi
+              <p>Phần mềm e-spa hỗ trợ rất tốt trong các chiến dịch Marketing của chúng tôi đến với
+                khách hàng, nhất là
+                các dịp lễ trong năm, không còn phải tốn nhiều chi phí marketing đắt đỏ, nhưng thông
+                điệp của chúng tôi
                 vẫn truyền đến được đến với đối tượng khách hàng </p>
             </div>
           </div>
@@ -685,8 +720,10 @@
             <hr class="space">
             <div class="cmtDetail">
               <img class="talk" src="./assets/img/talk.svg" alt="">
-              <p>Phần mềm e-spa hỗ trợ rất tốt trong các chiến dịch Marketing của chúng tôi đến với khách hàng, nhất là
-                các dịp lễ trong năm, không còn phải tốn nhiều chi phí marketing đắt đỏ, nhưng thông điệp của chúng tôi
+              <p>Phần mềm e-spa hỗ trợ rất tốt trong các chiến dịch Marketing của chúng tôi đến với
+                khách hàng, nhất là
+                các dịp lễ trong năm, không còn phải tốn nhiều chi phí marketing đắt đỏ, nhưng thông
+                điệp của chúng tôi
                 vẫn truyền đến được đến với đối tượng khách hàng </p>
             </div>
           </div>
@@ -700,8 +737,10 @@
             <hr class="space">
             <div class="cmtDetail">
               <img class="talk" src="./assets/img/talk.svg" alt="">
-              <p>Phần mềm e-spa hỗ trợ rất tốt trong các chiến dịch Marketing của chúng tôi đến với khách hàng, nhất là
-                các dịp lễ trong năm, không còn phải tốn nhiều chi phí marketing đắt đỏ, nhưng thông điệp của chúng tôi
+              <p>Phần mềm e-spa hỗ trợ rất tốt trong các chiến dịch Marketing của chúng tôi đến với
+                khách hàng, nhất là
+                các dịp lễ trong năm, không còn phải tốn nhiều chi phí marketing đắt đỏ, nhưng thông
+                điệp của chúng tôi
                 vẫn truyền đến được đến với đối tượng khách hàng </p>
             </div>
           </div>
@@ -728,9 +767,11 @@
 
   <!-- registerUser  -->
   <div class="container-fluid">
-    <p class="registerUser-title">Hơn<span> 5,000</span> doanh nghiệp, chủ shop đang quản lý cửa hàng như thế
+    <p class="registerUser-title">Hơn<span> 5,000</span> doanh nghiệp, chủ shop đang quản lý cửa
+      hàng như thế
       nào?</p>
-    <p class="justify-content-center d-flex registerUser-detail">Đăng ký dùng thử miễn phí 30 ngày để khám phá</p>
+    <p class="justify-content-center d-flex registerUser-detail">Đăng ký dùng thử miễn phí 30 ngày
+      để khám phá</p>
     <form class="justify-content-center d-flex" id="formRegister">
       <div class="input-group mb-3 align-items-center formRegister-div">
         <div class="input-group-text"><img src="./assets/img/email.svg" alt=""></div>
@@ -754,7 +795,8 @@
           <div class="spacePresent">
           </div>
           <p class="present-desc">
-            e-Spa là hệ thống phần mềm quản lý spa, salon… hoàn toàn đáp ứng nhu cầu quản trị và chăm sóc khách hàng
+            e-Spa là hệ thống phần mềm quản lý spa, salon… hoàn toàn đáp ứng nhu cầu quản trị và
+            chăm sóc khách hàng
             của các spa, salon tóc, thẩm mỹ viện...
           </p>
           <i class="fa-brands fa-facebook"
@@ -789,7 +831,8 @@
               GPKD: 0108149044 - cấp ngày 29/01/2018
             </p>
             <p>
-              <i class="fa-solid fa-location-dot"></i> Tầng 4, Số 84 Tô Vĩnh Diện, Phường Khương Trung, Quận Thanh Xuân,
+              <i class="fa-solid fa-location-dot"></i> Tầng 4, Số 84 Tô Vĩnh Diện, Phường Khương
+              Trung, Quận Thanh Xuân,
               TP Hà
               Nội
             </p>
