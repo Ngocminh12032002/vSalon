@@ -20,7 +20,8 @@
       "default",
       {
         "aria-valid-attr-value": "off",
-        "aria-required-children": "off"
+        "aria-required-children": "off",
+        "aria-required-parent": "off"
       }
     ],
     "compat-api/css": [
